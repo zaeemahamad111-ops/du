@@ -3,6 +3,81 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+const capabilitiesData = [
+  {
+    num: '01',
+    title: 'Mechanical Construction',
+    short: 'Erecting heavy machinery, gas turbines, and industrial systems with precision.',
+    desc: 'DU-Astral provides comprehensive mechanical installation services for large-scale industrial plants. Our mechanical division handles structural steel assembly, rotating equipment alignment, and heavy lifts with absolute precision.',
+    img: '/cap-mechanical.png',
+    features: ['Rotating equipment alignment', 'Gas & steam turbine installation', 'Heavy lift planning & execution', 'Structural steel erection']
+  },
+  {
+    num: '02',
+    title: 'Heavy Fabrication',
+    short: 'Processing structural steel annually under certified ASME codes.',
+    desc: 'Our fabrication facilities are equipped with state-of-the-art cutting, welding, and forming machinery. We produce heavy structural girders, vessels, and custom elements to meet stringent global specifications.',
+    img: '/cap-fabrication.png',
+    features: ['ASME code vessels & tanks', 'Precision plasma cutting & profiling', 'Submerged arc welding (SAW)', 'Non-destructive testing (NDT)']
+  },
+  {
+    num: '03',
+    title: 'Industrial Piping',
+    short: 'High-pressure process piping systems for petrochemical, oil, gas, and power plants.',
+    desc: 'We engineer, fabricate, and install high-pressure process piping networks. Our weld defect rates are among the lowest in the industry, achieved through continuous training and rigorous quality assurance protocols.',
+    img: '/cap-piping.png',
+    features: ['Alloy & carbon steel piping', 'Orbital and manual TIG welding', 'Hydrostatic & pneumatic testing', 'Prefabricated piping spools']
+  },
+  {
+    num: '04',
+    title: 'Plant Commissioning',
+    short: 'Pre-commissioning, start-up, and operational handovers for complex facilities.',
+    desc: 'DU-Astral ensures a seamless transition from construction to operations. Our specialist engineers conduct hot/cold loops testing, safety interlock verification, and performance trials before final handover.',
+    img: '/cap-commissioning.png',
+    features: ['Loop check & calibration', 'System cleaning & flushing', 'Start-up assistance & handovers', 'As-built documentation audits']
+  },
+  {
+    num: '05',
+    title: 'Shutdown Maintenance',
+    short: 'Maximizing plant uptime through turnarounds, retrofits, and outages.',
+    desc: 'We plan and execute plant shutdowns and outages. Our meticulous scheduling and resource allocation ensure turnaround projects are completed safely, on budget, and ahead of schedule.',
+    img: '/cap-shutdown.png',
+    features: ['Turnaround planning & scheduling', 'Critical equipment overhauls', 'Piping retrofits & modifications', 'Debottlenecking operations']
+  },
+  {
+    num: '06',
+    title: 'Electrical & Instrumentation',
+    short: 'Integrated power distribution, DCS/PLC automation, and instrumentation.',
+    desc: 'Our electrical and control division delivers end-to-end automation and power solutions. From high-voltage substations to smart field sensors, we integrate the nervous system of modern industrial plants.',
+    img: '/cap-electrical.png',
+    features: ['DCS & PLC system integration', 'High-voltage cable terminations', 'Field instrument calibration', 'Substation & switchgear erection']
+  }
+];
+
+const locationsData = [
+  {
+    country: 'Saudi Arabia',
+    region: 'Middle East Hub',
+    focus: 'Oil & Gas / Petrochemicals',
+    desc: 'Executing process piping fabrication, refinery expansion modules, and high-pressure pipeline networks under rigorous industrial parameters.',
+    projectsCount: '4 Active Projects'
+  },
+  {
+    country: 'South Africa',
+    region: 'African Operations',
+    focus: 'Steel & Power Infrastructure',
+    desc: 'Supporting thermal power plant upgrades, rolling mill structural erection, and heavy fabrication works for local industrial clusters.',
+    projectsCount: '3 Active Projects'
+  },
+  {
+    country: 'Fiji',
+    region: 'Asia-Pacific Hub',
+    focus: 'Renewable Energy & Power Grid',
+    desc: 'Developing wind farm foundations, high-voltage substations, and mechanical support systems for green energy transition initiatives.',
+    projectsCount: '2 Active Projects'
+  }
+];
+
 export default function HomePage() {
   return (
     <div className="bg-white font-sans antialiased text-[#111]">
@@ -194,141 +269,188 @@ export default function HomePage() {
       </section>
 
       {/* ── 3. OUR CAPABILITIES ── */}
-      <section className="bg-[#0D0D0D] text-white py-24 relative overflow-hidden" id="capabilities">
-        <div
-          className="absolute inset-0 opacity-[0.025] pointer-events-none"
-          style={{
-            backgroundImage: `linear-gradient(rgba(248,153,28,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(248,153,28,0.6) 1px, transparent 1px)`,
-            backgroundSize: '50px 50px',
-          }}
-        />
-
+      <section className="bg-white text-[#111] py-28 relative overflow-hidden" id="capabilities">
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16">
-
-          <div className="flex justify-between items-end border-b border-white/10 pb-8 mb-14">
-            <div>
-              <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">OUR CAPABILITIES</span>
-              <h2 className="font-black uppercase text-white leading-none tracking-tight"
-                style={{ fontSize: 'clamp(26px, 3.5vw, 48px)' }}>
-                End-To-End Engineering Solutions
-              </h2>
-            </div>
-            <Link
-              href="/services"
-              className="hidden md:flex items-center gap-2 text-[#F8991C] font-black text-[10px] tracking-[0.2em] uppercase hover:brightness-110"
-            >
-              VIEW ALL SERVICES
-              <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-                <path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
-            </Link>
+          
+          {/* Header */}
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-[#F8991C] text-[12px] font-black tracking-[0.25em] uppercase block mb-3">
+              OUR SERVICES
+            </span>
+            <h2 className="font-black text-[#111] tracking-tight uppercase leading-[1.1]"
+              style={{ fontSize: 'clamp(28px, 4vw, 48px)' }}>
+              Our Mission Is To Make Your{' '}
+              <span className="inline-block bg-[#F8991C] text-black px-4 py-1 rounded-full text-[0.85em] font-black align-middle my-1">
+                Engineering
+              </span>{' '}
+              Better Through Technology
+            </h2>
           </div>
 
-          {/* 6 capability cards */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-            {[
-              { title: 'MECHANICAL\nCONSTRUCTION', img: '/cap-mechanical.png' },
-              { title: 'HEAVY\nFABRICATION', img: '/cap-fabrication.png' },
-              { title: 'INDUSTRIAL\nPIPING', img: '/cap-piping.png' },
-              { title: 'PLANT\nCOMMISSIONING', img: '/cap-commissioning.png' },
-              { title: 'SHUTDOWN\nMAINTENANCE', img: '/cap-shutdown.png' },
-              { title: 'ELECTRICAL &\nINSTRUMENTATION', img: '/cap-electrical.png' },
-            ].map((cap, i) => (
-              <div key={i} className="group relative overflow-hidden bg-[#151515] border border-white/[0.06] hover:border-[#F8991C]/40 transition-colors duration-500 cursor-pointer" style={{ aspectRatio: '9/14' }}>
-                {/* Background image */}
-                <div className="absolute inset-0">
-                  <Image
-                    src={cap.img}
-                    alt={cap.title}
-                    fill
-                    className="object-cover opacity-50 group-hover:opacity-65 group-hover:scale-105 transition-all duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+          {/* Grid of 6 cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            {/* Card 1: Mechanical Construction (Dark) */}
+            <div className="bg-[#1a1a1a] text-white p-8 rounded-xl flex flex-col justify-between min-h-[280px] border border-white/5 shadow-lg group hover:-translate-y-1 transition-all duration-300">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-[#F8991C] flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-black text-2xl font-bold">engineering</span>
                 </div>
-
-                {/* CAD-style icon top */}
-                <div className="absolute top-5 left-5 z-10">
-                  <div className="w-9 h-9 border border-white/25 flex items-center justify-center">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="white" strokeWidth="1.2">
-                      <rect x="2" y="2" width="12" height="12" />
-                      <path d="M5 8h6M8 5v6" />
-                    </svg>
-                  </div>
-                </div>
-
-                {/* Bottom content */}
-                <div className="absolute bottom-0 left-0 right-0 z-10 p-5 border-t border-white/10">
-                  <h3 className="text-white font-black text-[10px] tracking-[0.15em] uppercase leading-tight mb-4 whitespace-pre-line">
-                    {cap.title}
-                  </h3>
-                  <svg className="text-[#F8991C] group-hover:translate-x-1.5 transition-transform duration-300" width="14" height="10" viewBox="0 0 14 10" fill="none">
-                    <path d="M1 5h12M9 1l4 4-4 4" stroke="#F8991C" strokeWidth="1.5" strokeLinecap="round"/>
-                  </svg>
-                </div>
+                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-white">
+                  Mechanical Construction
+                </h3>
+                <p className="text-white/60 text-[13px] leading-relaxed font-medium">
+                  Erecting heavy machinery, gas turbines, and industrial systems with absolute micro-millimeter precision.
+                </p>
               </div>
-            ))}
+            </div>
+
+            {/* Card 2: Heavy Fabrication (Orange Accent) */}
+            <div className="bg-[#F8991C] text-black p-8 rounded-xl flex flex-col justify-between min-h-[280px] shadow-lg group hover:-translate-y-1 transition-all duration-300">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-[#F8991C] text-2xl font-bold">precision_manufacturing</span>
+                </div>
+                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-black">
+                  Heavy Fabrication
+                </h3>
+                <p className="text-black/70 text-[13px] leading-relaxed font-semibold">
+                  Processing large-scale structural steel annually under certified ASME codes and global regulations.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3: Industrial Piping (Dark) */}
+            <div className="bg-[#1a1a1a] text-white p-8 rounded-xl flex flex-col justify-between min-h-[280px] border border-white/5 shadow-lg group hover:-translate-y-1 transition-all duration-300">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-[#F8991C] flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-black text-2xl font-bold">plumbing</span>
+                </div>
+                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-white">
+                  Industrial Piping
+                </h3>
+                <p className="text-white/60 text-[13px] leading-relaxed font-medium">
+                  High-pressure process piping networks engineered for petrochemical, refinery, and power utility sectors.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 4: Plant Commissioning (Light Gray) */}
+            <div className="bg-[#F5F5F7] text-[#111] p-8 rounded-xl flex flex-col justify-between min-h-[280px] shadow-sm group hover:-translate-y-1 transition-all duration-300">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-white text-2xl font-bold">power</span>
+                </div>
+                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-[#111]">
+                  Plant Commissioning
+                </h3>
+                <p className="text-[#555] text-[13px] leading-relaxed font-medium">
+                  Pre-commissioning, start-up operational checks, and performance trials for processing plants.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 5: Shutdown Maintenance (White with Border) */}
+            <div className="bg-white text-[#111] p-8 rounded-xl flex flex-col justify-between min-h-[280px] border border-zinc-200 shadow-sm group hover:-translate-y-1 transition-all duration-300">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-black text-2xl font-bold">build_circle</span>
+                </div>
+                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-[#111]">
+                  Shutdown Maintenance
+                </h3>
+                <p className="text-[#555] text-[13px] leading-relaxed font-medium">
+                  Fast-tracked turnaround outages, retrofits, and equipment debottlenecking to maximize plant uptime.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 6: Electrical & Instrumentation (Light Gray) */}
+            <div className="bg-[#F5F5F7] text-[#111] p-8 rounded-xl flex flex-col justify-between min-h-[280px] shadow-sm group hover:-translate-y-1 transition-all duration-300">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-white text-2xl font-bold">schema</span>
+                </div>
+                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-[#111]">
+                  Electrical & Control
+                </h3>
+                <p className="text-[#555] text-[13px] leading-relaxed font-medium">
+                  Integrated high-voltage power distribution, DCS/PLC automation, and smart field instrumentation systems.
+                </p>
+              </div>
+            </div>
+
           </div>
 
         </div>
       </section>
 
-      {/* ── 4. GLOBAL PRESENCE ── */}
-      <section className="bg-[#0f0f0f] border-y border-white/5 py-24 relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-[0.025] pointer-events-none"
-          style={{
-            backgroundImage: `linear-gradient(rgba(248,153,28,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(248,153,28,0.5) 1px, transparent 1px)`,
-            backgroundSize: '80px 80px',
-          }}
-        />
+       {/* ── 4. GLOBAL OPERATIONS ── */}
+      <section className="bg-[#FAF9F6] border-y border-zinc-200 py-28 relative overflow-hidden" id="global-reach">
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16">
-          <div className="mb-14">
-            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">GLOBAL REACH</span>
-            <h2 className="font-black uppercase text-white leading-none tracking-tight text-[28px] md:text-[48px]">
-              International Operations
-            </h2>
-            <p className="text-white/45 text-[13px] mt-4 max-w-xl leading-relaxed">
-              With proven logistical capabilities and high standards of safety compliance, DU-Astral delivers critical industrial infrastructure across global territories.
-            </p>
+          
+          {/* Header */}
+          <div className="grid grid-cols-12 gap-8 mb-20 items-end">
+            <div className="col-span-12 lg:col-span-8">
+              <span className="text-[#F8991C] text-[12px] font-black tracking-[0.25em] uppercase block mb-3">
+                GLOBAL FOOTPRINT
+              </span>
+              <h2 className="font-black text-[#111] uppercase leading-none tracking-tight"
+                style={{ fontSize: 'clamp(28px, 4.5vw, 54px)' }}>
+                International Operations
+              </h2>
+            </div>
+            <div className="col-span-12 lg:col-span-4">
+              <p className="text-zinc-600 text-[13px] leading-relaxed max-w-sm">
+                With proven logistical capabilities and high standards of safety compliance, DU-Astral delivers critical industrial infrastructure across global territories.
+              </p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                country: 'SAUDI ARABIA',
-                type: 'OIL & GAS / PETROCHEMICALS',
-                desc: 'Executing process piping fabrication, refinery expansion modules, and high-pressure pipeline networks under rigorous industrial parameters.',
-                coords: '23°88\'64" N // 45°07\'91" E'
-              },
-              {
-                country: 'SOUTH AFRICA',
-                type: 'STEEL & POWER INFRASTRUCTURE',
-                desc: 'Supporting thermal power plant upgrades, rolling mill structural erection, and heavy fabrication works for local industrial clusters.',
-                coords: '30°55\'92" S // 22°93\'75" E'
-              },
-              {
-                country: 'FIJI',
-                type: 'RENEWABLE ENERGY & POWER GRID',
-                desc: 'Developing wind farm foundations, high-voltage substations, and mechanical support systems for green energy transition initiatives.',
-                coords: '17°71\'39" S // 178°06\'50" E'
-              }
-            ].map((loc, i) => (
-              <div key={i} className="bg-black/40 border border-white/10 p-8 flex flex-col justify-between hover:border-[#F8991C] transition-colors duration-300">
+          {/* Grid: Columns separated by thin lines */}
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-zinc-200 border-t border-b border-zinc-200 py-12">
+            {locationsData.map((loc, i) => (
+              <div key={i} className="py-8 md:py-0 px-0 md:px-10 first:pl-0 last:pr-0 flex flex-col justify-between min-h-[420px] group">
                 <div>
-                  <span className="text-white/30 text-[9px] font-mono block mb-4">{loc.coords}</span>
-                  <h3 className="text-[#F8991C] font-black text-[20px] uppercase mb-1 tracking-wider">{loc.country}</h3>
-                  <span className="text-white/40 text-[9px] font-black tracking-widest block mb-4">{loc.type}</span>
-                  <p className="text-white/60 text-[12.5px] leading-relaxed mb-6 font-medium">
+                  <div className="flex items-center justify-between mb-8">
+                    <span className="text-zinc-400 text-[9px] font-mono tracking-[0.2em] uppercase">
+                      {loc.region}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-emerald-600 text-[9px] font-black tracking-widest uppercase">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                      Active Hub
+                    </span>
+                  </div>
+                  
+                  <h3 className="text-[#111] font-black text-[32px] tracking-tight uppercase leading-none mb-3 group-hover:text-[#F8991C] transition-colors duration-300">
+                    {loc.country}
+                  </h3>
+                  
+                  <span className="text-zinc-500 text-[10px] font-black tracking-widest block mb-6 uppercase">
+                    {loc.focus}
+                  </span>
+                  
+                  <p className="text-zinc-600 text-[13.5px] leading-relaxed font-medium mb-10">
                     {loc.desc}
                   </p>
                 </div>
-                <div className="flex items-center gap-2 text-white/50 text-[10px] font-black tracking-widest uppercase">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#F8991C]" />
-                  Active Operation
+
+                <div className="border-t border-zinc-100 pt-6">
+                  <div className="flex flex-col gap-3">
+                    <div className="flex justify-between items-center text-[11px]">
+                      <span className="text-zinc-400 font-bold uppercase tracking-wider">Logistics & Support</span>
+                      <span className="text-[#111] font-black uppercase">Full Operational</span>
+                    </div>
+                    <div className="flex justify-between items-center text-[11px]">
+                      <span className="text-zinc-400 font-bold uppercase tracking-wider">Scale of Operations</span>
+                      <span className="text-[#F8991C] font-black uppercase">{loc.projectsCount}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
