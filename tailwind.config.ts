@@ -57,6 +57,15 @@ const config: Config = {
         "surface-dim": "#ddd9d8",
         "on-tertiary-container": "#4c9169",
       },
+      keyframes: {
+        loading: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(300%)' },
+        },
+      },
+      animation: {
+        loading: 'loading 1.5s ease-in-out infinite',
+      },
       borderRadius: {
         DEFAULT: "0.5rem",
         sm: "0.25rem",

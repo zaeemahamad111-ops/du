@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Loader from "@/components/Loader";
 
 export const metadata: Metadata = {
   title: {
@@ -41,6 +42,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-white text-[#111] antialiased overflow-x-hidden">
+        <Loader />
         <Navbar />
         <main>{children}</main>
         <Footer />
