@@ -11,7 +11,7 @@ const navLinks = [
   { href: '/services', label: 'SERVICES' },
   { href: '/industries', label: 'INDUSTRIES' },
   { href: '/why-choose-us', label: 'WHY CHOOSE US' },
-  { href: '/clients-testimonials', label: 'CLIENTS & TESTIMONIALS' },
+
   { href: '/quality-safety', label: 'QUALITY & SAFETY' },
   { href: '/resources', label: 'RESOURCES' },
   { href: '/contact', label: 'CONTACT' },

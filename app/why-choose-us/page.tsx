@@ -121,20 +121,7 @@ export default function WhyChooseUsPage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIAL ── */}
-      <section className="bg-[#0D0D0D] text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{ backgroundImage: `linear-gradient(rgba(248,153,28,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(248,153,28,0.6) 1px, transparent 1px)`, backgroundSize: '50px 50px' }} />
-        <div className="relative z-10 max-w-[900px] mx-auto px-8 lg:px-16 text-center">
-          <span className="text-[#F8991C] font-black text-[64px] leading-none block mb-6 opacity-40">&ldquo;</span>
-          <p className="text-white font-black text-[22px] md:text-[28px] leading-[1.4] tracking-tight mb-10">
-            DU-Astral delivered our Paradip Refinery expansion on time and within budget — a rare feat in our industry. Their safety record and engineering precision are unmatched.
-          </p>
-          <div>
-            <span className="text-[#F8991C] font-black text-[12px] tracking-[0.2em] uppercase block">IOCL Project Director</span>
-            <span className="text-white/40 text-[11px] tracking-[0.15em] uppercase">Indian Oil Corporation Ltd.</span>
-          </div>
-        </div>
-      </section>
+
 
       {/* ── CTA ── */}
       <section className="bg-[#F8991C] py-20">

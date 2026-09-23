@@ -185,10 +185,11 @@ export default function HomePage() {
             loop
             muted
             playsInline
+            preload="auto"
             className="w-full h-full object-cover object-center opacity-90 scale-[1.08] origin-center"
             poster="/hero-bg.png"
           >
-            <source src="/hero-video.mp4" type="video/mp4" />
+            <source src="/hero-video-opt.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -483,86 +484,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 5. FEATURED PROJECT ── */}
-      <section className="bg-[#f5f5f5] py-24">
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
 
-          <div className="mb-10">
-            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-3">FEATURED PROJECT</span>
-            <h2 className="font-black uppercase text-[#111] leading-none tracking-tight"
-              style={{ fontSize: 'clamp(26px, 3.5vw, 48px)' }}>
-              PARADIP REFINERY EXPANSION
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 border border-[#ddd] overflow-hidden shadow-xl">
-
-            {/* Left: Image with diagonal clip */}
-            <div className="lg:col-span-7 relative h-[320px] lg:h-auto overflow-hidden bg-[#111]"
-              style={{ clipPath: 'polygon(0 0, 95% 0, 100% 100%, 0 100%)' }}>
-              <Image
-                src="/featured-project.png"
-                alt="Paradip Refinery"
-                fill
-                className="object-cover brightness-75"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/30" />
-            </div>
-
-            {/* Right: Details */}
-            <div className="lg:col-span-5 bg-white p-10 flex flex-col justify-center">
-
-              {/* Top 3 meta */}
-              <div className="grid grid-cols-3 gap-4 border-b border-[#e8e8e8] pb-6 mb-6">
-                <div>
-                  <span className="text-[9px] font-black tracking-[0.2em] text-[#aaa] uppercase block mb-1">CLIENT</span>
-                  <span className="text-[13px] font-black text-[#111]">IOCL</span>
-                </div>
-                <div>
-                  <span className="text-[9px] font-black tracking-[0.2em] text-[#aaa] uppercase block mb-1">INDUSTRY</span>
-                  <span className="text-[13px] font-black text-[#111]">Refineries</span>
-                </div>
-                <div>
-                  <span className="text-[9px] font-black tracking-[0.2em] text-[#aaa] uppercase block mb-1">LOCATION</span>
-                  <span className="text-[13px] font-black text-[#111]">Odisha, India</span>
-                </div>
-              </div>
-
-              {/* Stats grid */}
-              <div className="grid grid-cols-2 gap-5 mb-8">
-                {[
-                  { icon: '📅', label: 'DURATION', val: '36 Months' },
-                  { icon: '👷', label: 'MANPOWER', val: '1200+' },
-                  { icon: '✓', label: 'COMPLETED', val: '2023' },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <span className="text-[#F8991C] text-[18px] leading-none">{item.icon}</span>
-                    <div>
-                      <span className="text-[9px] font-black tracking-widest text-[#aaa] uppercase block">{item.label}</span>
-                      <span className="text-[13px] font-black text-[#111]">{item.val}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <p className="text-[#666] text-[13px] leading-[1.8] mb-8">
-                A greenfield refinery expansion project involving engineering, procurement, construction, installation and commissioning.
-              </p>
-
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-[#111] font-black text-[11px] tracking-[0.2em] uppercase border-b-2 border-[#111] pb-1 hover:text-[#F8991C] hover:border-[#F8991C] transition-colors self-start"
-              >
-                VIEW CASE STUDY
-                <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-                  <path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
-              </Link>
-            </div>
-
-          </div>
-        </div>
-      </section>
 
       {/* ── 5. INDUSTRIES WE SERVE ── */}
       <section className="bg-[#FAF9F6] py-24 border-y border-zinc-200">
