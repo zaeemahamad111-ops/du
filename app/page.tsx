@@ -3,54 +3,120 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const capabilitiesData = [
+const coreServicesData = [
   {
-    num: '01',
-    title: 'Mechanical Construction',
-    short: 'Erecting heavy machinery, gas turbines, and industrial systems with precision.',
-    desc: 'DU-Astral provides comprehensive mechanical installation services for large-scale industrial plants. Our mechanical division handles structural steel assembly, rotating equipment alignment, and heavy lifts with absolute precision.',
-    img: '/cap-mechanical.png',
-    features: ['Rotating equipment alignment', 'Gas & steam turbine installation', 'Heavy lift planning & execution', 'Structural steel erection']
+    title: 'Cement Plant Mechanical Erection & Shutdown Maintenance',
+    bullets: [
+      {
+        subtitle: 'Core Plant Equipment Erection',
+        desc: 'Precision erection, drive alignment, and mechanical installation of Rotary Kilns, Ball Mills, Vertical Roller Mills (VRM), Raw Mills, and Preheater Towers.'
+      },
+      {
+        subtitle: 'Material Handling & Processing',
+        desc: 'Assembly and precision alignment of heavy crushers, clinker coolers, bucket elevators, deep bucket conveyors, and bag filters.'
+      },
+      {
+        subtitle: 'Plant Modernization & Upgradation',
+        desc: 'Retrofitting existing production lines, plant debottlenecking, capacity expansion, and Waste Heat Recovery Plant (WHRP) integration.'
+      },
+      {
+        subtitle: 'Annual & Emergency Shutdown Execution',
+        desc: 'Rapid mobilization of dedicated 24/7 technical workforces, heavy tooling, and certified rigging teams for zero-delay turnaround execution.'
+      }
+    ]
   },
   {
-    num: '02',
-    title: 'Heavy Fabrication',
-    short: 'Processing structural steel annually under certified ASME codes.',
-    desc: 'Our fabrication facilities are equipped with state-of-the-art cutting, welding, and forming machinery. We produce heavy structural girders, vessels, and custom elements to meet stringent global specifications.',
-    img: '/cap-fabrication.png',
-    features: ['ASME code vessels & tanks', 'Precision plasma cutting & profiling', 'Submerged arc welding (SAW)', 'Non-destructive testing (NDT)']
+    title: 'Steel Plant Construction & Heavy Machinery Assembly',
+    bullets: [
+      {
+        subtitle: 'Heavy Equipment Erection',
+        desc: 'Precision positioning and laser alignment of Blast Furnaces, Direct Reduced Iron (DRI) kilns, Electric Arc Furnaces (EAF), and Continuous Casting Machines.'
+      },
+      {
+        subtitle: 'Rolling Mill Assembly',
+        desc: 'Installation and commissioning support for rebar mills, wire rod mills, heavy drive gearboxes, overhead crane systems, and hydraulic tilt tables.'
+      },
+      {
+        subtitle: 'Utility & Ducting Networks',
+        desc: 'High-capacity industrial air/gas ducting fabrication, cooling water headers, slurry piping systems, and heavy exhaust stack erection.'
+      }
+    ]
   },
   {
-    num: '03',
-    title: 'Industrial Piping',
-    short: 'High-pressure process piping systems for petrochemical, oil, gas, and power plants.',
-    desc: 'We engineer, fabricate, and install high-pressure process piping networks. Our weld defect rates are among the lowest in the industry, achieved through continuous training and rigorous quality assurance protocols.',
-    img: '/cap-piping.png',
-    features: ['Alloy & carbon steel piping', 'Orbital and manual TIG welding', 'Hydrostatic & pneumatic testing', 'Prefabricated piping spools']
+    title: 'Structural Steel Fabrication & Erection',
+    bullets: [
+      {
+        subtitle: 'Industrial Buildings & Heavy Plant Sheds',
+        desc: 'Fabrication and field erection of pre-engineered and heavy structural plant buildings, furnace sheds, warehouse structures, powerhouse buildings, and conveyor gantries.'
+      },
+      {
+        subtitle: 'Pipe Racks & Access Platforms',
+        desc: 'Multi-tier heavy pipe racks, heat exchanger support structures, equipment access platforms, stair towers, walkways, and safety handrailing.'
+      },
+      {
+        subtitle: 'Heavy Girders, Columns & Frames',
+        desc: 'Workshop fabrication and field assembly of high-tonnage EOT crane girders, box columns, heavy built-up sections, roof trusses, and spatial frames.'
+      },
+      {
+        subtitle: 'Hoppers, Silos & Support Framing',
+        desc: 'Structural framing and assembly for heavy raw material hoppers, clinker silos, coal bunkers, and cyclone support towers.'
+      },
+      {
+        subtitle: 'Surface Preparation & Quality Control',
+        desc: 'SA 2.5 shot/grit blasting, anti-corrosive industrial painting systems, and 100% joint NDT (RT/UT/MPT/LPT) executed by certified 6G/SMAW/MIG welders.'
+      }
+    ]
   },
   {
-    num: '04',
-    title: 'Plant Commissioning',
-    short: 'Pre-commissioning, start-up, and operational handovers for complex facilities.',
-    desc: 'DU-Astral ensures a seamless transition from construction to operations. Our specialist engineers conduct hot/cold loops testing, safety interlock verification, and performance trials before final handover.',
-    img: '/cap-commissioning.png',
-    features: ['Loop check & calibration', 'System cleaning & flushing', 'Start-up assistance & handovers', 'As-built documentation audits']
+    title: 'High-Pressure Industrial Piping Systems',
+    bullets: [
+      {
+        subtitle: 'Process & Utility Piping',
+        desc: 'Shop and field fabrication of Carbon Steel (CS), Stainless Steel (SS), and Alloy Steel piping for high-pressure, high-temperature industrial process lines.'
+      },
+      {
+        subtitle: 'Testing & Pre-Commissioning Support',
+        desc: 'Hydro-testing, pneumatic testing, line flushing, chemical cleaning, and joint NDT inspections to ensure 100% leak-free plant startups.'
+      }
+    ]
   },
   {
-    num: '05',
-    title: 'Shutdown Maintenance',
-    short: 'Maximizing plant uptime through turnarounds, retrofits, and outages.',
-    desc: 'We plan and execute plant shutdowns and outages. Our meticulous scheduling and resource allocation ensure turnaround projects are completed safely, on budget, and ahead of schedule.',
-    img: '/cap-shutdown.png',
-    features: ['Turnaround planning & scheduling', 'Critical equipment overhauls', 'Piping retrofits & modifications', 'Debottlenecking operations']
+    title: 'Wind Turbine Erection & Renewable Energy Balance-of-Plant',
+    bullets: [
+      {
+        subtitle: 'Wind Turbine Generator (WTG) Erection',
+        desc: 'Complete mechanical assembly, heavy crane positioning, and torque-controlled fastening of nacelles, hubs, rotors, and tower sections for onshore wind farms.'
+      },
+      {
+        subtitle: 'Hybrid Concrete Towers',
+        desc: 'Specialized segment alignment, jointing, and post-tensioning execution for high-capacity hybrid concrete wind turbine towers.'
+      },
+      {
+        subtitle: 'Waste Heat Recovery Systems (WHRP)',
+        desc: 'Turnkey mechanical assembly, boiler casing erection, heat exchanger placement, and ducting integration to capture waste thermal energy in cement and steel facilities.'
+      },
+      {
+        subtitle: 'Mechanical Balance-of-Plant (BOP)',
+        desc: 'Erection of auxiliary mechanical networks, including hydraulic power packs, lube oil piping, cooling systems, and structural bases.'
+      }
+    ]
   },
   {
-    num: '06',
-    title: 'Electrical & Instrumentation',
-    short: 'Integrated power distribution, DCS/PLC automation, and instrumentation.',
-    desc: 'Our electrical and control division delivers end-to-end automation and power solutions. From high-voltage substations to smart field sensors, we integrate the nervous system of modern industrial plants.',
-    img: '/cap-electrical.png',
-    features: ['DCS & PLC system integration', 'High-voltage cable terminations', 'Field instrument calibration', 'Substation & switchgear erection']
+    title: 'Heavy Industrial Fabrication & Storage Vessels',
+    bullets: [
+      {
+        subtitle: 'Ducting & Hopper Fabrication',
+        desc: 'Custom fabrication of thick-plate ducting, raw material hoppers, silos, cyclones, and discharge chutes.'
+      },
+      {
+        subtitle: 'Storage Tanks & Pressure Vessels',
+        desc: 'On-site and shop fabrication of API 650 storage tanks, utility vessels, chemical tanks, and heat exchanger shells.'
+      },
+      {
+        subtitle: 'Protective Surface Coatings',
+        desc: 'Specialized grit blasting, anti-corrosive primer application, and heavy-duty industrial painting for harsh operating environments.'
+      }
+    ]
   }
 ];
 
@@ -75,6 +141,33 @@ const locationsData = [
     focus: 'Renewable Energy & Power Grid',
     desc: 'Developing wind farm foundations, high-voltage substations, and mechanical support systems for green energy transition initiatives.',
     projectsCount: '2 Active Projects'
+  }
+];
+
+const detailedIndustriesData = [
+  {
+    title: 'Cement & Mineral Processing',
+    scope: 'Turnkey mechanical erection, rotary kiln installations, preheaters, clinker grinding units, and structural construction for greenfield plants, modernizations, and capacity expansions.'
+  },
+  {
+    title: 'Steel, Aluminium & Heavy Metals',
+    scope: 'Structural steel fabrication, blast furnace erections, sponge iron plants, rebar mills, and heavy mill machinery positioning and alignment.'
+  },
+  {
+    title: 'Oil Refineries & Petrochemicals',
+    scope: 'High-pressure process piping pre-fabrication, mobile service tower installations, cross-country pipelines, and specialized equipment erection under strict ASME/API guidelines.'
+  },
+  {
+    title: 'Thermal Power & Captive Utilities',
+    scope: 'Comprehensive construction and mechanical installation for power generation facilities, boiler units, structural sheds, and industrial utility networks.'
+  },
+  {
+    title: 'Wind & Renewable Energy',
+    scope: 'Assembly, heavy lifting, and mechanical erection of Wind Turbine Generators (WTGs), hybrid concrete towers, waste heat recovery systems (WHRP), and mechanical balance-of-plant packages.'
+  },
+  {
+    title: 'Process Industries (Sugar, Fertilizer & MDF)',
+    scope: 'Specialized vessel fabrication, digester dome construction, chemical storage units, and process equipment mechanical assembly.'
   }
 ];
 
@@ -268,118 +361,54 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 3. OUR CAPABILITIES ── */}
-      <section className="bg-white text-[#111] py-28 relative overflow-hidden" id="capabilities">
+      {/* ── 3. OUR CORE SERVICES ── */}
+      <section className="bg-white py-24 relative overflow-hidden" id="core-services">
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16">
           
-          {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#F8991C] text-[12px] font-black tracking-[0.25em] uppercase block mb-3">
-              OUR SERVICES
-            </span>
-            <h2 className="font-black text-[#111] tracking-tight uppercase leading-[1.1]"
-              style={{ fontSize: 'clamp(28px, 4vw, 48px)' }}>
-              Our Mission Is To Make Your{' '}
-              <span className="inline-block bg-[#F8991C] text-black px-4 py-1 rounded-full text-[0.85em] font-black align-middle my-1">
-                Engineering
-              </span>{' '}
-              Better Through Technology
-            </h2>
+          {/* Header matches Industries We Serve exactly */}
+          <div className="flex flex-col lg:flex-row justify-between lg:items-end border-b border-[#e8e8e8] pb-8 mb-16 gap-6">
+            <div className="max-w-3xl">
+              <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">
+                OUR CORE SERVICES
+              </span>
+              <h2 className="font-black uppercase text-[#111] leading-[1.1] tracking-tight mb-4"
+                style={{ fontSize: 'clamp(26px, 3.5vw, 48px)' }}>
+                Our Core Services.
+              </h2>
+              <p className="text-zinc-600 text-[14px] font-medium leading-relaxed max-w-xl">
+                Mechanical Fabrication, Heavy Equipment Erection, Plant Shutdowns & Field Support
+              </p>
+            </div>
           </div>
 
-          {/* Grid of 6 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            {/* Card 1: Mechanical Construction (Dark) */}
-            <div className="bg-[#1a1a1a] text-white p-8 rounded-xl flex flex-col justify-between min-h-[280px] border border-white/5 shadow-lg group hover:-translate-y-1 transition-all duration-300">
-              <div>
-                <div className="w-12 h-12 rounded-full bg-[#F8991C] flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-black text-2xl font-bold">engineering</span>
+          {/* 2x2 Grid of detailed service cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {coreServicesData.map((service, i) => (
+              <div key={i} className="bg-[#FAF9F6] border border-zinc-200 p-10 flex flex-col group hover:border-[#F8991C] hover:shadow-xl transition-all duration-300">
+                <div className="flex justify-between items-start mb-8">
+                  <span className="text-zinc-300 font-black text-[40px] leading-none group-hover:text-[#F8991C]/20 transition-colors">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
                 </div>
-                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-white">
-                  Mechanical Construction
+                
+                <h3 className="font-black text-[22px] text-[#111] uppercase tracking-tight leading-tight mb-8 pb-6 border-b border-zinc-200 group-hover:border-[#F8991C]/30 transition-colors">
+                  {service.title}
                 </h3>
-                <p className="text-white/60 text-[13px] leading-relaxed font-medium">
-                  Erecting heavy machinery, gas turbines, and industrial systems with absolute micro-millimeter precision.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2: Heavy Fabrication (Orange Accent) */}
-            <div className="bg-[#F8991C] text-black p-8 rounded-xl flex flex-col justify-between min-h-[280px] shadow-lg group hover:-translate-y-1 transition-all duration-300">
-              <div>
-                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-[#F8991C] text-2xl font-bold">precision_manufacturing</span>
+                
+                <div className="flex flex-col gap-6">
+                  {service.bullets.map((bullet, j) => (
+                    <div key={j}>
+                      <span className="inline-block text-[#111] text-[11px] font-black tracking-[0.1em] uppercase mb-2">
+                        • {bullet.subtitle}
+                      </span>
+                      <p className="text-zinc-600 text-[13px] leading-[1.7] font-medium pl-3 border-l-2 border-[#F8991C]/30">
+                        {bullet.desc}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-black">
-                  Heavy Fabrication
-                </h3>
-                <p className="text-black/70 text-[13px] leading-relaxed font-semibold">
-                  Processing large-scale structural steel annually under certified ASME codes and global regulations.
-                </p>
               </div>
-            </div>
-
-            {/* Card 3: Industrial Piping (Dark) */}
-            <div className="bg-[#1a1a1a] text-white p-8 rounded-xl flex flex-col justify-between min-h-[280px] border border-white/5 shadow-lg group hover:-translate-y-1 transition-all duration-300">
-              <div>
-                <div className="w-12 h-12 rounded-full bg-[#F8991C] flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-black text-2xl font-bold">plumbing</span>
-                </div>
-                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-white">
-                  Industrial Piping
-                </h3>
-                <p className="text-white/60 text-[13px] leading-relaxed font-medium">
-                  High-pressure process piping networks engineered for petrochemical, refinery, and power utility sectors.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 4: Plant Commissioning (Light Gray) */}
-            <div className="bg-[#F5F5F7] text-[#111] p-8 rounded-xl flex flex-col justify-between min-h-[280px] shadow-sm group hover:-translate-y-1 transition-all duration-300">
-              <div>
-                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-white text-2xl font-bold">power</span>
-                </div>
-                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-[#111]">
-                  Plant Commissioning
-                </h3>
-                <p className="text-[#555] text-[13px] leading-relaxed font-medium">
-                  Pre-commissioning, start-up operational checks, and performance trials for processing plants.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 5: Shutdown Maintenance (White with Border) */}
-            <div className="bg-white text-[#111] p-8 rounded-xl flex flex-col justify-between min-h-[280px] border border-zinc-200 shadow-sm group hover:-translate-y-1 transition-all duration-300">
-              <div>
-                <div className="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-black text-2xl font-bold">build_circle</span>
-                </div>
-                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-[#111]">
-                  Shutdown Maintenance
-                </h3>
-                <p className="text-[#555] text-[13px] leading-relaxed font-medium">
-                  Fast-tracked turnaround outages, retrofits, and equipment debottlenecking to maximize plant uptime.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 6: Electrical & Instrumentation (Light Gray) */}
-            <div className="bg-[#F5F5F7] text-[#111] p-8 rounded-xl flex flex-col justify-between min-h-[280px] shadow-sm group hover:-translate-y-1 transition-all duration-300">
-              <div>
-                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-white text-2xl font-bold">schema</span>
-                </div>
-                <h3 className="font-black text-[20px] tracking-wide uppercase mb-3 text-[#111]">
-                  Electrical & Control
-                </h3>
-                <p className="text-[#555] text-[13px] leading-relaxed font-medium">
-                  Integrated high-voltage power distribution, DCS/PLC automation, and smart field instrumentation systems.
-                </p>
-              </div>
-            </div>
-
+            ))}
           </div>
 
         </div>
@@ -536,62 +565,56 @@ export default function HomePage() {
       </section>
 
       {/* ── 5. INDUSTRIES WE SERVE ── */}
-      <section className="bg-white py-24">
+      <section className="bg-[#FAF9F6] py-24 border-y border-zinc-200">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
 
-          <div className="flex justify-between items-end border-b border-[#e8e8e8] pb-8 mb-12">
-            <div>
+          <div className="flex flex-col lg:flex-row justify-between lg:items-end border-b border-zinc-200 pb-8 mb-16 gap-6">
+            <div className="max-w-2xl">
               <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">INDUSTRIES WE SERVE</span>
-              <h2 className="font-black uppercase text-[#111] leading-none tracking-tight"
+              <h2 className="font-black uppercase text-[#111] leading-[1.1] tracking-tight mb-4"
                 style={{ fontSize: 'clamp(26px, 3.5vw, 48px)' }}>
                 Industries We Serve.
               </h2>
+              <p className="text-zinc-600 text-[14px] font-medium leading-relaxed max-w-xl">
+                Specialized Mechanical Construction, Heavy Erection & Maintenance across Core Industrial Infrastructure
+              </p>
             </div>
             <Link
               href="/industries"
-              className="hidden md:flex items-center gap-2 text-[#F8991C] font-black text-[10px] tracking-[0.2em] uppercase hover:brightness-90"
+              className="inline-flex items-center gap-2 text-[#111] font-black text-[11px] tracking-[0.2em] uppercase border-b-2 border-[#111] pb-1 hover:text-[#F8991C] hover:border-[#F8991C] transition-colors self-start lg:self-auto mb-2"
             >
               VIEW ALL INDUSTRIES
               <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-                <path d="M1 5h12M9 1l4 4-4 4" stroke="#F8991C" strokeWidth="1.5" strokeLinecap="round"/>
+                <path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-            {[
-              { name: 'OIL & GAS', img: '/ind-oilgas.png', isKeySector: false },
-              { name: 'STEEL', img: '/ind-steel.png', isKeySector: true },
-              { name: 'POWER', img: '/ind-power.png', isKeySector: true },
-              { name: 'REFINERIES', img: '/ind-refinery.png', isKeySector: false },
-              { name: 'PETROCHEMICALS', img: '/ind-petrochemical.png', isKeySector: false },
-              { name: 'RENEWABLE ENERGY & WIND', img: '/ind-renewable.png', isKeySector: true },
-            ].map((ind, i) => (
-              <div key={i} className={`group relative overflow-hidden bg-[#111] border transition-colors duration-300 cursor-pointer ${
-                ind.isKeySector ? 'border-[#F8991C]/50 hover:border-[#F8991C]' : 'border-[#ddd] hover:border-[#F8991C]'
-              }`} style={{ aspectRatio: '3/4' }}>
-                
-                {ind.isKeySector && (
-                  <div className="absolute top-3 right-3 bg-[#F8991C] text-black text-[7.5px] font-black tracking-widest px-2 py-0.5 flex items-center gap-0.5 z-10 shadow-lg">
-                    <span>CORE</span>
-                    <span className="text-[9px] leading-none font-bold">+</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {detailedIndustriesData.map((ind, i) => (
+              <div key={i} className="bg-white border border-zinc-200 p-8 flex flex-col justify-between group hover:border-[#F8991C] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div>
+                  <div className="flex justify-between items-start mb-6">
+                    <span className="text-zinc-200 font-black text-[36px] leading-none group-hover:text-[#F8991C]/20 transition-colors">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <span className="material-symbols-outlined text-zinc-300 group-hover:text-[#F8991C] transition-colors">
+                      north_east
+                    </span>
                   </div>
-                )}
-
-                <Image
-                  src={ind.img}
-                  alt={ind.name}
-                  fill
-                  className="object-cover grayscale opacity-70 group-hover:opacity-55 group-hover:scale-105 transition-all duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-
-                <div className="absolute bottom-0 left-0 right-0 p-5 z-10 flex justify-between items-end">
-                  <h3 className="text-white font-black text-[9.5px] tracking-[0.12em] uppercase leading-tight">{ind.name}</h3>
-                  <svg className="text-[#F8991C] group-hover:translate-x-1 transition-transform" width="14" height="10" viewBox="0 0 14 10" fill="none">
-                    <path d="M1 5h12M9 1l4 4-4 4" stroke="#F8991C" strokeWidth="1.5" strokeLinecap="round"/>
-                  </svg>
+                  <h3 className="font-black text-[18px] text-[#111] uppercase tracking-tight leading-tight mb-6">
+                    {ind.title}
+                  </h3>
+                  <div className="space-y-2">
+                    <span className="inline-block text-[#F8991C] text-[9px] font-black tracking-[0.2em] uppercase">
+                      SCOPE OF WORK
+                    </span>
+                    <p className="text-zinc-600 text-[13px] leading-[1.7] font-medium">
+                      {ind.scope}
+                    </p>
+                  </div>
                 </div>
+                <div className="w-8 h-[3px] bg-zinc-200 mt-10 group-hover:bg-[#F8991C] group-hover:w-16 transition-all duration-300" />
               </div>
             ))}
           </div>

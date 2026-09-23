@@ -10,45 +10,45 @@ export const metadata: Metadata = {
 const services = [
   {
     id: '01',
-    title: 'MECHANICAL CONSTRUCTION',
-    desc: 'Turnkey mechanical erection of large-scale industrial equipment, structural steel, and rotating machinery for EPC projects across refineries, steel plants, and power stations.',
+    title: 'Cement Plant Mechanical Erection & Shutdown Maintenance',
+    desc: 'We deliver end-to-end mechanical erection, equipment alignment, plant renovation, and shutdown execution for cement manufacturing facilities across India.',
     img: '/cap-mechanical.png',
-    points: ['Equipment Erection', 'Structural Steel Fabrication', 'Pressure Vessel Installation', 'Rotating Machinery Alignment'],
+    points: ['Core Plant Equipment Erection', 'Material Handling & Processing', 'Plant Modernization & Upgradation', 'Annual & Emergency Shutdown Execution'],
   },
   {
     id: '02',
-    title: 'HEAVY FABRICATION',
-    desc: 'In-house and on-site fabrication of structural components, skids, tanks, and pressure vessels using advanced welding and quality assurance processes.',
-    img: '/cap-fabrication.png',
-    points: ['Structural Fabrication', 'Pressure Vessels & Tanks', 'Skid & Module Fabrication', 'Certified Welding Processes'],
+    title: 'Steel Plant Construction & Heavy Machinery Assembly',
+    desc: 'We execute heavy-duty mechanical construction, precision equipment positioning, and utility assembly for steel mills, sponge iron plants, and metal processing complexes.',
+    img: '/cap-piping.png',
+    points: ['Heavy Equipment Erection', 'Rolling Mill Assembly', 'Utility & Ducting Networks'],
   },
   {
     id: '03',
-    title: 'INDUSTRIAL PIPING',
-    desc: 'Complete piping solutions from spool fabrication and erection to hydro testing, insulation, and painting — for all industrial process requirements.',
-    img: '/cap-piping.png',
-    points: ['Spool Fabrication', 'Piping Erection & Alignment', 'Hydrostatic Testing', 'Insulation & Painting'],
+    title: 'Structural Steel Fabrication & Erection',
+    desc: 'We offer full-scope structural engineering—from shop detailing, heavy plate fabrication, and surface treatment to site transportation and precision heavy-lift erection.',
+    img: '/cap-shutdown.png',
+    points: ['Industrial Buildings & Heavy Plant Sheds', 'Pipe Racks & Access Platforms', 'Heavy Girders, Columns & Frames', 'Hoppers, Silos & Support Framing', 'Surface Preparation & Quality Control'],
   },
   {
     id: '04',
-    title: 'PLANT COMMISSIONING',
-    desc: 'End-to-end pre-commissioning, commissioning, and start-up services ensuring every system is performance-verified before handover.',
-    img: '/cap-commissioning.png',
-    points: ['Pre-Commissioning Checks', 'System Flushing & Cleaning', 'Performance Testing', 'Operational Handover'],
+    title: 'High-Pressure Industrial Piping Systems',
+    desc: 'We provide complete industrial piping solutions—from isometric detailing and shop fabrication to field fit-up, NDT testing, and system pre-commissioning.',
+    img: '/cap-fabrication.png',
+    points: ['Process & Utility Piping', 'Testing & Pre-Commissioning Support'],
   },
   {
     id: '05',
-    title: 'SHUTDOWN MAINTENANCE',
-    desc: 'Planned shutdown and turnaround services that minimize downtime, maximize plant efficiency, and meet the highest safety standards.',
-    img: '/cap-shutdown.png',
-    points: ['Turnaround Planning', 'Equipment Overhaul', 'NDT & Inspection', 'Statutory Compliance'],
+    title: 'Wind Turbine Erection & Renewable Energy',
+    desc: 'We specialize in heavy-lift rigging, mechanical assembly, and site erection for utility-scale renewable power installations and industrial energy recovery projects.',
+    img: '/cap-mechanical.png',
+    points: ['Wind Turbine Generator (WTG) Erection', 'Hybrid Concrete Towers', 'Waste Heat Recovery Systems (WHRP)', 'Mechanical Balance-of-Plant (BOP)'],
   },
   {
     id: '06',
-    title: 'ELECTRICAL & INSTRUMENTATION',
-    desc: 'Complete E&I solutions including HT/LT cabling, control panel installation, DCS/SCADA integration, and instrumentation loop checking.',
-    img: '/cap-electrical.png',
-    points: ['HT/LT Cable Laying', 'Control & MCC Panels', 'DCS/SCADA Integration', 'Loop Checking & Calibration'],
+    title: 'Heavy Industrial Fabrication & Storage Vessels',
+    desc: 'Our workshop and field teams execute custom plate fabrication, heavy ducting, and industrial tankage strictly conforming to code requirements.',
+    img: '/cap-piping.png',
+    points: ['Ducting & Hopper Fabrication', 'Storage Tanks & Pressure Vessels', 'Protective Surface Coatings'],
   },
 ];
 
@@ -65,11 +65,10 @@ export default function ServicesPage() {
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16 w-full">
           <div className="border-l-4 border-[#F8991C] pl-8 py-4">
-            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.3em] uppercase block mb-4">WHAT WE DO / OUR SERVICES</span>
+            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.3em] uppercase block mb-4">WHAT WE DO / OUR CORE SERVICES</span>
             <h1 className="text-white font-black uppercase leading-[0.92] tracking-tight" style={{ fontSize: 'clamp(48px, 7vw, 88px)' }}>
-              END-TO-END<br />
-              <span className="text-[#F8991C]">ENGINEERING</span><br />
-              SOLUTIONS.
+              OUR CORE<br />
+              <span className="text-[#F8991C]">SERVICES.</span>
             </h1>
             <p className="text-white/55 text-[13px] leading-relaxed max-w-lg mt-6">
               From mechanical construction to electrical instrumentation — we deliver complete EPC services with precision, safety, and on-time execution.

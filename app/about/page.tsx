@@ -20,102 +20,101 @@ export default function AboutPage() {
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16 w-full">
           <div className="border-l-4 border-[#F8991C] pl-8 py-4">
-            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.3em] uppercase block mb-4">WHO WE ARE / ABOUT US</span>
-            <h1 className="text-white font-black uppercase leading-[0.92] tracking-tight" style={{ fontSize: 'clamp(48px, 7vw, 88px)' }}>
-              BUILT ON<br />
-              <span className="text-[#F8991C]">PRECISION.</span>
+            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.3em] uppercase block mb-4">PAGE HEADER</span>
+            <h1 className="text-white font-black uppercase leading-[0.92] tracking-tight mb-6" style={{ fontSize: 'clamp(48px, 7vw, 88px)' }}>
+              ABOUT <span className="text-[#F8991C]">US.</span>
             </h1>
-            <p className="text-white/55 text-[13px] leading-relaxed max-w-lg mt-6">
-              With decades of experience and a relentless commitment to quality, safety and innovation, we deliver infrastructure that drives progress and empowers industries.
+            <p className="text-white/70 text-[16px] font-medium leading-relaxed max-w-2xl border-t border-white/10 pt-6">
+              Specialist Mechanical Engineering, Heavy Equipment Erection & Plant Maintenance Partner Across India.
             </p>
           </div>
         </div>
       </header>
 
-      {/* ── WHO WE ARE ── */}
+      {/* ── COMPANY OVERVIEW & HIGHLIGHTS ── */}
       <section className="bg-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.8) 1px, transparent 1px)`, backgroundSize: '40px 40px' }} />
-        <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16 grid grid-cols-12 gap-10 items-center">
-          <div className="col-span-12 lg:col-span-7">
-            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-5">01 / GENESIS</span>
-            <h2 className="font-black uppercase leading-[1.0] tracking-tight text-[#111] mb-7" style={{ fontSize: 'clamp(28px, 3.5vw, 52px)' }}>
-              WHERE STRUCTURAL RIGOR<br />MEETS VISIONARY DESIGN.
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <p className="text-[#555] text-[13px] leading-[1.8]">
-                Founded on the core tenets of engineering excellence, DU-Astral represents the vanguard of modern industrial construction. We operate under the belief that true quality is found in the precision of execution and the integrity of materials.
+        
+        <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+            <div className="lg:col-span-5">
+              <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-5">COMPANY OVERVIEW</span>
+              <h2 className="font-black uppercase leading-[1.0] tracking-tight text-[#111]" style={{ fontSize: 'clamp(32px, 4vw, 52px)' }}>
+                Bridging the Gap Between Engineering Design & Site Execution.
+              </h2>
+            </div>
+            <div className="lg:col-span-7 flex flex-col gap-6 justify-center">
+              <p className="text-[#555] text-[15px] leading-[1.8] font-medium pl-6 border-l-2 border-[#F8991C]">
+                We are a trusted mechanical contracting company specializing in heavy equipment erection, industrial structural fabrication, high-pressure piping execution, and shutdown maintenance for India’s core infrastructure sectors.
               </p>
-              <p className="text-[#555] text-[13px] leading-[1.8]">
-                Every project we undertake is a narrative of structural optimization, balancing complex logistics and environmental challenges to build facilities that accelerate industrial progress and operational efficacy.
+              <p className="text-[#555] text-[14px] leading-[1.8]">
+                Operating as a direct partner to plant owners, EPC contractors, and project developers, we bridge the gap between engineering design and site execution. From installing rotary kilns and wind turbine generators to executing critical refinery piping and emergency plant turnarounds, our work is driven by zero-harm safety standards, precision quality control, and strict schedule adherence.
               </p>
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-5 relative mt-10 lg:mt-0">
-            <div className="relative aspect-[4/5] overflow-hidden border border-[#e8e8e8]">
-              <Image src="/workers.png" alt="DU-Astral team" fill className="object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-            </div>
-            <div className="absolute -bottom-5 -left-5 w-32 h-32 bg-[#F8991C] flex items-center justify-center p-4">
-              <span className="text-black text-[9px] font-black uppercase tracking-wider text-center leading-tight">BUILT ON<br />METALLURGICAL<br />TRUST</span>
-            </div>
+
+          {/* Key Highlights Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { id: '01', title: 'Specialist Focus', desc: 'Non-EPC Mechanical Execution, Fabrication & Erection' },
+              { id: '02', title: 'Core Sectors', desc: 'Cement, Steel, Renewable Energy, Refineries & Process Plants' },
+              { id: '03', title: 'Certified Workforce', desc: '6G/TIG Welders, Heavy Riggers, QA/QC Inspectors & HSE Officers' },
+              { id: '04', title: 'Compliance Framework', desc: 'ISO 9001, ISO 45001 & ASME / API Execution Standards' }
+            ].map((highlight) => (
+              <div key={highlight.id} className="bg-[#FAF9F6] border border-zinc-200 p-8 flex flex-col group hover:border-[#F8991C] transition-colors duration-300">
+                <span className="text-zinc-300 font-black text-[40px] leading-none mb-6 block group-hover:text-[#F8991C]/20 transition-colors">{highlight.id}</span>
+                <h3 className="font-black text-[16px] text-[#111] uppercase tracking-tight mb-3">{highlight.title}</h3>
+                <p className="text-zinc-600 text-[13px] leading-relaxed font-medium">{highlight.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── MISSION & VISION ── */}
-      <section className="bg-[#f5f5f5] py-24 border-y border-[#e0e0e0] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.8) 1px, transparent 1px)`, backgroundSize: '40px 40px' }} />
-        <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white border border-[#e0e0e0] p-10 relative">
-            <div className="absolute top-0 left-0 w-1 h-12 bg-[#111]" />
-            <span className="text-[10px] font-black tracking-[0.25em] uppercase text-[#111] block mb-4">THE MISSION</span>
-            <h3 className="font-black uppercase text-[#111] text-[22px] leading-tight tracking-tight mb-5">
-              To eliminate the redundant, leaving behind pure structural honesty.
-            </h3>
-            <p className="text-[#666] text-[13px] leading-[1.8]">
-              We strip away the superfluous to construct facilities of steel, pipe, and intent — creating industrial environments that serve productivity, safety, and efficiency.
+      {/* ── VISION & MISSION ── */}
+      <section className="bg-[#111] text-white py-24 border-y border-zinc-800 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: `linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)`, backgroundSize: '40px 40px' }} />
+        <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+          {/* Vision */}
+          <div className="bg-[#1a1a1a] border border-zinc-800 p-12 relative group hover:border-[#F8991C]/50 transition-colors">
+            <div className="absolute top-0 left-0 w-1.5 h-16 bg-[#F8991C]" />
+            <span className="text-[10px] font-black tracking-[0.25em] uppercase text-[#F8991C] block mb-6">OUR VISION</span>
+            <p className="text-white/90 text-[16px] md:text-[18px] leading-[1.8] font-medium">
+              To be India’s most reliable mechanical construction and plant erection contractor, recognized for technical precision, zero-incident site safety, and rapid project mobilization.
             </p>
           </div>
-          <div className="bg-black text-white border border-black p-10 relative">
-            <div className="absolute top-0 left-0 w-1 h-12 bg-[#F8991C]" />
-            <span className="text-[10px] font-black tracking-[0.25em] uppercase text-[#F8991C] block mb-4">THE VISION</span>
-            <h3 className="font-black uppercase text-white text-[22px] leading-tight tracking-tight mb-5">
-              Accelerating industrial potential through precision engineering.
-            </h3>
-            <p className="text-white/60 text-[13px] leading-[1.8] mb-8">
-              By 2030, DU-Astral will benchmark zero-incident engineering architectures, seamlessly linking computational workflows with traditional craftsmanship.
+          {/* Mission */}
+          <div className="bg-[#1a1a1a] border border-zinc-800 p-12 relative group hover:border-[#F8991C]/50 transition-colors">
+            <div className="absolute top-0 left-0 w-1.5 h-16 bg-white" />
+            <span className="text-[10px] font-black tracking-[0.25em] uppercase text-white/50 block mb-6">OUR MISSION</span>
+            <p className="text-white/90 text-[15px] md:text-[16px] leading-[1.8] font-medium">
+              To deliver safe, high-quality, and on-time mechanical execution for core industrial sectors through certified workforces, modern tooling, and strict adherence to international quality standards.
             </p>
-            <Link href="/contact" className="inline-flex items-center gap-2 text-[#F8991C] font-black text-[11px] tracking-[0.2em] uppercase border-b border-[#F8991C] pb-1 hover:opacity-80 transition-opacity">
-              GET IN TOUCH
-              <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* ── MILESTONES ── */}
-      <section className="bg-white py-24">
+      {/* ── CORE VALUES ── */}
+      <section className="bg-[#FAF9F6] py-24">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
           <div className="text-center mb-16">
-            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">02 / CHRONOLOGY</span>
+            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">OUR CORE VALUES</span>
             <h2 className="font-black uppercase text-[#111] leading-none tracking-tight" style={{ fontSize: 'clamp(28px, 4vw, 52px)' }}>
-              Timeline of Scale
+              Quality, Health, Safety & Environment
             </h2>
           </div>
-          <div className="space-y-0 border border-[#e8e8e8]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { year: '2006', title: 'INCEPTION', text: 'Founded in Bengaluru with a vision to deliver world-class EPC services to Indian industry.' },
-              { year: '2012', title: 'FIRST MAJOR PROJECT', text: 'Completed the first large-scale refinery project for IOCL — a milestone that set the standard for DU-Astral.' },
-              { year: '2018', title: 'PAN-INDIA EXPANSION', text: 'Extended operations to 10+ states, serving oil & gas, steel, power, and petrochemical sectors.' },
-              { year: '2024', title: 'THE ASTRAL ERA', text: 'Crossing 1000+ completed projects with 5000+ skilled professionals across India.' },
-            ].map((item, i) => (
-              <div key={i} className="grid grid-cols-12 border-b border-[#e8e8e8] last:border-b-0 group hover:bg-[#f5f5f5] transition-colors">
-                <div className="col-span-2 bg-[#f5f5f5] group-hover:bg-[#F8991C] transition-colors p-8 flex items-center justify-center border-r border-[#e8e8e8]">
-                  <span className="font-black text-[22px] text-[#111] group-hover:text-black">{item.year}</span>
-                </div>
-                <div className="col-span-10 p-8">
-                  <span className="text-[#F8991C] text-[10px] font-black tracking-[0.2em] uppercase block mb-2">{item.title}</span>
-                  <p className="text-[#555] text-[13px] leading-[1.7]">{item.text}</p>
+              { num: '01', title: 'Safety First (HSE Excellence)', desc: 'Strict adherence to ISO 45001 frameworks and daily site safety management to ensure zero lost-time incidents across all project sites.' },
+              { num: '02', title: 'Technical Precision & QA/QC', desc: 'Executing every weld, machinery alignment, and heavy lift in full compliance with ASME, API, and Indian Standards (BIS).' },
+              { num: '03', title: 'Timely Mobilization & Delivery', desc: 'Meeting tight project milestones and critical shutdown deadlines through organized field leadership and dedicated tooling.' },
+              { num: '04', title: 'Operational Integrity', desc: 'Building long-term client partnerships through clear communication, honest technical planning, and execution reliability.' }
+            ].map((value) => (
+              <div key={value.num} className="bg-white border border-zinc-200 p-10 flex gap-8 group hover:border-[#F8991C] hover:shadow-lg transition-all duration-300 items-start">
+                <span className="text-[#F8991C]/20 font-black text-[48px] leading-none group-hover:text-[#F8991C] transition-colors mt-1">{value.num}</span>
+                <div>
+                  <h3 className="font-black text-[18px] text-[#111] uppercase tracking-tight mb-3">{value.title}</h3>
+                  <p className="text-zinc-600 text-[14px] leading-relaxed font-medium">{value.desc}</p>
                 </div>
               </div>
             ))}
