@@ -284,7 +284,65 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 3. OUR CORE CAPABILITIES & SERVICES ── */}
+      {/* ── 3. INDUSTRIES WE SERVE ── */}
+      <section className="bg-[#FAF9F6] py-24 border-y border-zinc-200">
+        <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
+
+          <div className="flex flex-col lg:flex-row justify-between lg:items-end border-b border-zinc-200 pb-8 mb-16 gap-6">
+            <div className="max-w-2xl">
+              <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">INDUSTRIES WE SERVE</span>
+              <h2 className="font-black uppercase text-[#111] leading-[1.1] tracking-tight mb-4"
+                style={{ fontSize: 'clamp(26px, 3.5vw, 48px)' }}>
+                Industries We Serve.
+              </h2>
+              <p className="text-zinc-600 text-[14px] font-medium leading-relaxed max-w-xl">
+                Specialized Mechanical Construction, Heavy Erection & Maintenance across Core Industrial Infrastructure
+              </p>
+            </div>
+            <Link
+              href="/industries"
+              className="inline-flex items-center gap-2 text-[#111] font-black text-[11px] tracking-[0.2em] uppercase border-b-2 border-[#111] pb-1 hover:text-[#F8991C] hover:border-[#F8991C] transition-colors self-start lg:self-auto mb-2"
+            >
+              VIEW ALL INDUSTRIES
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                <path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {detailedIndustriesData.map((ind, i) => (
+              <div key={i} className="bg-white border border-zinc-200 p-8 flex flex-col justify-between group hover:border-[#F8991C] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div>
+                  <div className="flex justify-between items-start mb-6">
+                    <span className="text-zinc-200 font-black text-[36px] leading-none group-hover:text-[#F8991C]/20 transition-colors">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <span className="material-symbols-outlined text-zinc-300 group-hover:text-[#F8991C] transition-colors">
+                      north_east
+                    </span>
+                  </div>
+                  <h3 className="font-black text-[18px] text-[#111] uppercase tracking-tight leading-tight mb-6">
+                    {ind.title}
+                  </h3>
+                  <div className="space-y-2">
+                    <span className="inline-block text-[#F8991C] text-[9px] font-black tracking-[0.2em] uppercase">
+                      SCOPE OF WORK
+                    </span>
+                    <p className="text-zinc-600 text-[13px] leading-[1.7] font-medium">
+                      {ind.scope}
+                    </p>
+                  </div>
+                </div>
+                <div className="w-8 h-[3px] bg-zinc-200 mt-10 group-hover:bg-[#F8991C] group-hover:w-16 transition-all duration-300" />
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ── 4. OUR CORE CAPABILITIES & SERVICES ── */}
       <section className="bg-white py-24 relative overflow-hidden" id="core-services">
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16">
 
@@ -371,7 +429,7 @@ export default function HomePage() {
         </div>
       </section>
 
-       {/* ── 4. GLOBAL OPERATIONS ── */}
+       {/* ── 5. GLOBAL OPERATIONS ── */}
       <section className="bg-[#FAF9F6] border-y border-zinc-200 py-28 relative overflow-hidden" id="global-reach">
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16">
           
@@ -433,66 +491,6 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-
-
-      {/* ── 5. INDUSTRIES WE SERVE ── */}
-      <section className="bg-[#FAF9F6] py-24 border-y border-zinc-200">
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
-
-          <div className="flex flex-col lg:flex-row justify-between lg:items-end border-b border-zinc-200 pb-8 mb-16 gap-6">
-            <div className="max-w-2xl">
-              <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">INDUSTRIES WE SERVE</span>
-              <h2 className="font-black uppercase text-[#111] leading-[1.1] tracking-tight mb-4"
-                style={{ fontSize: 'clamp(26px, 3.5vw, 48px)' }}>
-                Industries We Serve.
-              </h2>
-              <p className="text-zinc-600 text-[14px] font-medium leading-relaxed max-w-xl">
-                Specialized Mechanical Construction, Heavy Erection & Maintenance across Core Industrial Infrastructure
-              </p>
-            </div>
-            <Link
-              href="/industries"
-              className="inline-flex items-center gap-2 text-[#111] font-black text-[11px] tracking-[0.2em] uppercase border-b-2 border-[#111] pb-1 hover:text-[#F8991C] hover:border-[#F8991C] transition-colors self-start lg:self-auto mb-2"
-            >
-              VIEW ALL INDUSTRIES
-              <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-                <path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {detailedIndustriesData.map((ind, i) => (
-              <div key={i} className="bg-white border border-zinc-200 p-8 flex flex-col justify-between group hover:border-[#F8991C] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div>
-                  <div className="flex justify-between items-start mb-6">
-                    <span className="text-zinc-200 font-black text-[36px] leading-none group-hover:text-[#F8991C]/20 transition-colors">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                    <span className="material-symbols-outlined text-zinc-300 group-hover:text-[#F8991C] transition-colors">
-                      north_east
-                    </span>
-                  </div>
-                  <h3 className="font-black text-[18px] text-[#111] uppercase tracking-tight leading-tight mb-6">
-                    {ind.title}
-                  </h3>
-                  <div className="space-y-2">
-                    <span className="inline-block text-[#F8991C] text-[9px] font-black tracking-[0.2em] uppercase">
-                      SCOPE OF WORK
-                    </span>
-                    <p className="text-zinc-600 text-[13px] leading-[1.7] font-medium">
-                      {ind.scope}
-                    </p>
-                  </div>
-                </div>
-                <div className="w-8 h-[3px] bg-zinc-200 mt-10 group-hover:bg-[#F8991C] group-hover:w-16 transition-all duration-300" />
               </div>
             ))}
           </div>
