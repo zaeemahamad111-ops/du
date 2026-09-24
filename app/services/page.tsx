@@ -65,13 +65,13 @@ export default function ServicesPage() {
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16 w-full">
           <div className="border-l-4 border-[#F8991C] pl-8 py-4">
-            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.3em] uppercase block mb-4">WHAT WE DO / OUR CORE SERVICES</span>
+            <span className="text-[#F8991C] text-[10px] font-black tracking-[0.3em] uppercase block mb-4">WHAT WE DO / OUR CORE CAPABILITIES</span>
             <h1 className="text-white font-black uppercase leading-[0.92] tracking-tight" style={{ fontSize: 'clamp(48px, 7vw, 88px)' }}>
               OUR CORE<br />
-              <span className="text-[#F8991C]">SERVICES.</span>
+              <span className="text-[#F8991C]">CAPABILITIES.</span>
             </h1>
             <p className="text-white/55 text-[13px] leading-relaxed max-w-lg mt-6">
-              From mechanical construction to electrical instrumentation — we deliver complete EPC services with precision, safety, and on-time execution.
+              End-to-end mechanical construction, heavy fabrication, high-pressure piping, and renewable energy erection — delivered with precision, safety, and on-time execution.
             </p>
           </div>
         </div>

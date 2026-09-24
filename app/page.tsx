@@ -5,116 +5,58 @@ import Image from 'next/image';
 
 const coreServicesData = [
   {
-    title: 'Cement Plant Mechanical Erection & Shutdown Maintenance',
+    title: 'Mechanical Erection & Equipment Installation',
     bullets: [
       {
-        subtitle: 'Core Plant Equipment Erection',
-        desc: 'Precision erection, drive alignment, and mechanical installation of Rotary Kilns, Ball Mills, Vertical Roller Mills (VRM), Raw Mills, and Preheater Towers.'
+        subtitle: 'Heavy Plant Machinery Erection',
+        desc: 'Precision positioning, heavy-lift rigging, and alignment of critical rotary and static equipment (wind turbines, rotary kilns, steam/gas turbines, crushers, and compressors).'
       },
       {
-        subtitle: 'Material Handling & Processing',
-        desc: 'Assembly and precision alignment of heavy crushers, clinker coolers, bucket elevators, deep bucket conveyors, and bag filters.'
+        subtitle: 'Structural Steel Fabrication & Erection',
+        desc: 'Shop fabrication, surface treatment, and field erection of structural sheds, pipe racks, industrial buildings, and conveyor gantries.'
       },
       {
-        subtitle: 'Plant Modernization & Upgradation',
-        desc: 'Retrofitting existing production lines, plant debottlenecking, capacity expansion, and Waste Heat Recovery Plant (WHRP) integration.'
-      },
-      {
-        subtitle: 'Annual & Emergency Shutdown Execution',
-        desc: 'Rapid mobilization of dedicated 24/7 technical workforces, heavy tooling, and certified rigging teams for zero-delay turnaround execution.'
+        subtitle: 'Tanks, Vessels & Cryogenic Storage',
+        desc: 'On-site mechanical fabrication, testing, and erection of cryogenic tanks, storage vessels, digester domes, and pressure vessels complying with NDT standards.'
       }
     ]
   },
   {
-    title: 'Steel Plant Construction & Heavy Machinery Assembly',
+    title: 'Industrial Piping Systems (Fabrication & Erection)',
     bullets: [
       {
-        subtitle: 'Heavy Equipment Erection',
-        desc: 'Precision positioning and laser alignment of Blast Furnaces, Direct Reduced Iron (DRI) kilns, Electric Arc Furnaces (EAF), and Continuous Casting Machines.'
-      },
-      {
-        subtitle: 'Rolling Mill Assembly',
-        desc: 'Installation and commissioning support for rebar mills, wire rod mills, heavy drive gearboxes, overhead crane systems, and hydraulic tilt tables.'
-      },
-      {
-        subtitle: 'Utility & Ducting Networks',
-        desc: 'High-capacity industrial air/gas ducting fabrication, cooling water headers, slurry piping systems, and heavy exhaust stack erection.'
-      }
-    ]
-  },
-  {
-    title: 'Structural Steel Fabrication & Erection',
-    bullets: [
-      {
-        subtitle: 'Industrial Buildings & Heavy Plant Sheds',
-        desc: 'Fabrication and field erection of pre-engineered and heavy structural plant buildings, furnace sheds, warehouse structures, powerhouse buildings, and conveyor gantries.'
-      },
-      {
-        subtitle: 'Pipe Racks & Access Platforms',
-        desc: 'Multi-tier heavy pipe racks, heat exchanger support structures, equipment access platforms, stair towers, walkways, and safety handrailing.'
-      },
-      {
-        subtitle: 'Heavy Girders, Columns & Frames',
-        desc: 'Workshop fabrication and field assembly of high-tonnage EOT crane girders, box columns, heavy built-up sections, roof trusses, and spatial frames.'
-      },
-      {
-        subtitle: 'Hoppers, Silos & Support Framing',
-        desc: 'Structural framing and assembly for heavy raw material hoppers, clinker silos, coal bunkers, and cyclone support towers.'
-      },
-      {
-        subtitle: 'Surface Preparation & Quality Control',
-        desc: 'SA 2.5 shot/grit blasting, anti-corrosive industrial painting systems, and 100% joint NDT (RT/UT/MPT/LPT) executed by certified 6G/SMAW/MIG welders.'
-      }
-    ]
-  },
-  {
-    title: 'High-Pressure Industrial Piping Systems',
-    bullets: [
-      {
-        subtitle: 'Process & Utility Piping',
-        desc: 'Shop and field fabrication of Carbon Steel (CS), Stainless Steel (SS), and Alloy Steel piping for high-pressure, high-temperature industrial process lines.'
+        subtitle: 'Piping Fabrication & Fit-Up',
+        desc: 'Shop and field fabrication of Carbon Steel (CS), Stainless Steel (SS), and Alloy Steel piping systems for high-pressure and high-temperature process applications.'
       },
       {
         subtitle: 'Testing & Pre-Commissioning Support',
-        desc: 'Hydro-testing, pneumatic testing, line flushing, chemical cleaning, and joint NDT inspections to ensure 100% leak-free plant startups.'
+        desc: 'Pneumatic testing, hydro-testing, chemical flushing, line checking, and joint NDT inspections to guarantee operational readiness before plant startup.'
       }
     ]
   },
   {
-    title: 'Wind Turbine Erection & Renewable Energy Balance-of-Plant',
+    title: 'Plant Shutdowns, Overhauls & Modernization',
     bullets: [
       {
-        subtitle: 'Wind Turbine Generator (WTG) Erection',
-        desc: 'Complete mechanical assembly, heavy crane positioning, and torque-controlled fastening of nacelles, hubs, rotors, and tower sections for onshore wind farms.'
+        subtitle: 'Annual & Emergency Shutdown Execution',
+        desc: 'Rapid mobilization of skilled field management, specialized tooling, and certified mechanical teams for plant turnarounds with zero safety incidents.'
       },
       {
-        subtitle: 'Hybrid Concrete Towers',
-        desc: 'Specialized segment alignment, jointing, and post-tensioning execution for high-capacity hybrid concrete wind turbine towers.'
-      },
-      {
-        subtitle: 'Waste Heat Recovery Systems (WHRP)',
-        desc: 'Turnkey mechanical assembly, boiler casing erection, heat exchanger placement, and ducting integration to capture waste thermal energy in cement and steel facilities.'
-      },
-      {
-        subtitle: 'Mechanical Balance-of-Plant (BOP)',
-        desc: 'Erection of auxiliary mechanical networks, including hydraulic power packs, lube oil piping, cooling systems, and structural bases.'
+        subtitle: 'Plant Upgradation & Retrofitting',
+        desc: 'Retrofitting existing cement, steel, and chemical plants, integrating Waste Heat Recovery Plants (WHRP), and mechanical debottlenecking to extend asset lifecycle.'
       }
     ]
   },
   {
-    title: 'Heavy Industrial Fabrication & Storage Vessels',
+    title: 'Specialized Mechanical Execution & Manpower Support',
     bullets: [
       {
-        subtitle: 'Ducting & Hopper Fabrication',
-        desc: 'Custom fabrication of thick-plate ducting, raw material hoppers, silos, cyclones, and discharge chutes.'
+        subtitle: 'Specialized Field Execution',
+        desc: 'Mechanical seal replacements, valve overhauls, pump alignment, and precision mechanical maintenance during plant operations or shutdowns.'
       },
       {
-        subtitle: 'Storage Tanks & Pressure Vessels',
-        desc: 'On-site and shop fabrication of API 650 storage tanks, utility vessels, chemical tanks, and heat exchanger shells.'
-      },
-      {
-        subtitle: 'Protective Surface Coatings',
-        desc: 'Specialized grit blasting, anti-corrosive primer application, and heavy-duty industrial painting for harsh operating environments.'
+        subtitle: 'Technical Manpower Deputation',
+        desc: 'Mobilization of certified 6G/TIG welders, fabricators, fitters, mechanical riggers, QA/QC inspectors, and site HSE officers for project sites across India.'
       }
     ]
   }
@@ -147,19 +89,19 @@ const locationsData = [
 const detailedIndustriesData = [
   {
     title: 'Cement & Mineral Processing',
-    scope: 'Turnkey mechanical erection, rotary kiln installations, preheaters, clinker grinding units, and structural construction for greenfield plants, modernizations, and capacity expansions.'
+    scope: 'Mechanical erection, rotary kiln installations, preheaters, clinker grinding units, and heavy equipment alignment for greenfield plants, modernizations, and capacity expansions.'
   },
   {
     title: 'Steel, Aluminium & Heavy Metals',
-    scope: 'Structural steel fabrication, blast furnace erections, sponge iron plants, rebar mills, and heavy mill machinery positioning and alignment.'
+    scope: 'Heavy machinery positioning, blast furnace erections, sponge iron plants, rebar mills, and industrial mill mechanical installations.'
   },
   {
     title: 'Oil Refineries & Petrochemicals',
-    scope: 'High-pressure process piping pre-fabrication, mobile service tower installations, cross-country pipelines, and specialized equipment erection under strict ASME/API guidelines.'
+    scope: 'High-pressure process piping pre-fabrication, mobile service tower installations, cross-country/in-plant pipelines, and storage vessel mechanical works conforming to ASME/API standards.'
   },
   {
     title: 'Thermal Power & Captive Utilities',
-    scope: 'Comprehensive construction and mechanical installation for power generation facilities, boiler units, structural sheds, and industrial utility networks.'
+    scope: 'Mechanical installation for power generation units, boiler components, ducting, heavy equipment, and utility piping networks.'
   },
   {
     title: 'Wind & Renewable Energy',
@@ -167,7 +109,7 @@ const detailedIndustriesData = [
   },
   {
     title: 'Process Industries (Sugar, Fertilizer & MDF)',
-    scope: 'Specialized vessel fabrication, digester dome construction, chemical storage units, and process equipment mechanical assembly.'
+    scope: 'Specialized vessel assembly, digester dome construction, tank erection, and process equipment mechanical installation.'
   }
 ];
 
