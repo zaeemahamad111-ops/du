@@ -5,61 +5,41 @@ import Image from 'next/image';
 
 const coreServicesData = [
   {
-    title: 'Mechanical Erection & Equipment Installation',
-    bullets: [
-      {
-        subtitle: 'Heavy Plant Machinery Erection',
-        desc: 'Precision positioning, heavy-lift rigging, and alignment of critical rotary and static equipment (wind turbines, rotary kilns, steam/gas turbines, crushers, and compressors).'
-      },
-      {
-        subtitle: 'Structural Steel Fabrication & Erection',
-        desc: 'Shop fabrication, surface treatment, and field erection of structural sheds, pipe racks, industrial buildings, and conveyor gantries.'
-      },
-      {
-        subtitle: 'Tanks, Vessels & Cryogenic Storage',
-        desc: 'On-site mechanical fabrication, testing, and erection of cryogenic tanks, storage vessels, digester domes, and pressure vessels complying with NDT standards.'
-      }
-    ]
+    id: '01',
+    title: 'Cement Plant Mechanical Erection & Shutdown Maintenance',
+    desc: 'End-to-end mechanical erection, equipment alignment, plant renovation, and shutdown execution for cement manufacturing facilities across India.',
+    tags: ['Rotary Kilns & VRMs', 'Clinker Coolers & Mills', 'WHRP Integration', 'Emergency Shutdowns'],
   },
   {
-    title: 'Industrial Piping Systems (Fabrication & Erection)',
-    bullets: [
-      {
-        subtitle: 'Piping Fabrication & Fit-Up',
-        desc: 'Shop and field fabrication of Carbon Steel (CS), Stainless Steel (SS), and Alloy Steel piping systems for high-pressure and high-temperature process applications.'
-      },
-      {
-        subtitle: 'Testing & Pre-Commissioning Support',
-        desc: 'Pneumatic testing, hydro-testing, chemical flushing, line checking, and joint NDT inspections to guarantee operational readiness before plant startup.'
-      }
-    ]
+    id: '02',
+    title: 'Steel Plant Construction & Heavy Machinery Assembly',
+    desc: 'Heavy-duty mechanical construction, precision equipment positioning, and utility assembly for steel mills, sponge iron plants, and metal processing complexes.',
+    tags: ['Blast Furnaces & EAF', 'Rolling Mill Assembly', 'Ducting Networks'],
   },
   {
-    title: 'Plant Shutdowns, Overhauls & Modernization',
-    bullets: [
-      {
-        subtitle: 'Annual & Emergency Shutdown Execution',
-        desc: 'Rapid mobilization of skilled field management, specialized tooling, and certified mechanical teams for plant turnarounds with zero safety incidents.'
-      },
-      {
-        subtitle: 'Plant Upgradation & Retrofitting',
-        desc: 'Retrofitting existing cement, steel, and chemical plants, integrating Waste Heat Recovery Plants (WHRP), and mechanical debottlenecking to extend asset lifecycle.'
-      }
-    ]
+    id: '03',
+    title: 'Structural Steel Fabrication & Erection',
+    desc: 'Full-scope structural engineering — from shop fabrication and surface treatment to precision heavy-lift field erection per IS 800, ASME, and AISC codes.',
+    tags: ['Plant Buildings & Sheds', 'Pipe Racks & Platforms', 'Heavy Girders & Frames', 'NDT & Surface Treatment'],
   },
   {
-    title: 'Specialized Mechanical Execution & Manpower Support',
-    bullets: [
-      {
-        subtitle: 'Specialized Field Execution',
-        desc: 'Mechanical seal replacements, valve overhauls, pump alignment, and precision mechanical maintenance during plant operations or shutdowns.'
-      },
-      {
-        subtitle: 'Technical Manpower Deputation',
-        desc: 'Mobilization of certified 6G/TIG welders, fabricators, fitters, mechanical riggers, QA/QC inspectors, and site HSE officers for project sites across India.'
-      }
-    ]
-  }
+    id: '04',
+    title: 'High-Pressure Industrial Piping Systems',
+    desc: 'Complete industrial piping solutions — from isometric detailing and shop fabrication to field fit-up, NDT testing, and pre-commissioning.',
+    tags: ['CS / SS / Alloy Piping', 'Hydro & Pneumatic Testing', 'NDT Inspections'],
+  },
+  {
+    id: '05',
+    title: 'Wind Turbine Erection & Renewable Energy Balance-of-Plant',
+    desc: 'Heavy-lift rigging, mechanical assembly, and site erection for utility-scale wind farms and industrial waste heat recovery installations.',
+    tags: ['WTG Nacelle & Rotor Erection', 'Hybrid Concrete Towers', 'WHRP Systems', 'Mechanical BOP'],
+  },
+  {
+    id: '06',
+    title: 'Heavy Industrial Fabrication & Storage Vessels',
+    desc: 'Custom plate fabrication, heavy ducting, and industrial tankage executed strictly conforming to API 650 and applicable code requirements.',
+    tags: ['Ducting & Hoppers', 'API 650 Storage Tanks', 'Surface Coatings'],
+  },
 ];
 
 const locationsData = [
@@ -304,54 +284,88 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 3. OUR CORE SERVICES ── */}
+      {/* ── 3. OUR CORE CAPABILITIES & SERVICES ── */}
       <section className="bg-white py-24 relative overflow-hidden" id="core-services">
         <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16">
-          
-          {/* Header matches Industries We Serve exactly */}
+
+          {/* Section Header */}
           <div className="flex flex-col lg:flex-row justify-between lg:items-end border-b border-[#e8e8e8] pb-8 mb-16 gap-6">
-            <div className="max-w-3xl">
+            <div className="max-w-2xl">
               <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">
-                OUR CORE SERVICES
+                OUR CORE CAPABILITIES & SERVICES
               </span>
               <h2 className="font-black uppercase text-[#111] leading-[1.1] tracking-tight mb-4"
                 style={{ fontSize: 'clamp(26px, 3.5vw, 48px)' }}>
-                Our Core Services.
+                Our Core Capabilities<br />
+                <span className="text-[#F8991C]">&amp; Services.</span>
               </h2>
               <p className="text-zinc-600 text-[14px] font-medium leading-relaxed max-w-xl">
-                Mechanical Fabrication, Heavy Equipment Erection, Plant Shutdowns & Field Support
+                Mechanical Fabrication, Heavy Equipment Erection, Plant Shutdowns &amp; Field Support
               </p>
             </div>
+            <Link
+              href="/services"
+              className="flex-shrink-0 inline-flex items-center gap-2 bg-[#111] text-white font-black text-[11px] tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#F8991C] hover:text-black transition-colors self-start lg:self-auto"
+            >
+              VIEW ALL CAPABILITIES
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                <path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+            </Link>
           </div>
 
-          {/* 2x2 Grid of detailed service cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* 3x2 Grid — condensed cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-[#e8e8e8]">
             {coreServicesData.map((service, i) => (
-              <div key={i} className="bg-[#FAF9F6] border border-zinc-200 p-10 flex flex-col group hover:border-[#F8991C] hover:shadow-xl transition-all duration-300">
-                <div className="flex justify-between items-start mb-8">
-                  <span className="text-zinc-300 font-black text-[40px] leading-none group-hover:text-[#F8991C]/20 transition-colors">
-                    {String(i + 1).padStart(2, '0')}
+              <div
+                key={i}
+                className={`p-8 border-r border-b border-[#e8e8e8] flex flex-col group hover:bg-[#F8991C]/5 transition-all duration-300 ${
+                  i % 3 === 2 ? 'lg:border-r-0' : ''
+                } ${
+                  i >= 3 ? 'md:border-b-0' : ''
+                }`}
+              >
+                {/* Number + title */}
+                <div className="flex items-start gap-4 mb-5">
+                  <span className="text-[#F8991C] font-black text-[32px] leading-none opacity-30 group-hover:opacity-60 transition-opacity flex-shrink-0">
+                    {service.id}
                   </span>
+                  <h3 className="font-black text-[15px] text-[#111] uppercase tracking-tight leading-snug mt-1">
+                    {service.title}
+                  </h3>
                 </div>
-                
-                <h3 className="font-black text-[22px] text-[#111] uppercase tracking-tight leading-tight mb-8 pb-6 border-b border-zinc-200 group-hover:border-[#F8991C]/30 transition-colors">
-                  {service.title}
-                </h3>
-                
-                <div className="flex flex-col gap-6">
-                  {service.bullets.map((bullet, j) => (
-                    <div key={j}>
-                      <span className="inline-block text-[#111] text-[11px] font-black tracking-[0.1em] uppercase mb-2">
-                        • {bullet.subtitle}
-                      </span>
-                      <p className="text-zinc-600 text-[13px] leading-[1.7] font-medium pl-3 border-l-2 border-[#F8991C]/30">
-                        {bullet.desc}
-                      </p>
-                    </div>
+
+                {/* Divider */}
+                <div className="w-8 h-[2px] bg-[#F8991C] mb-5" />
+
+                {/* Short description */}
+                <p className="text-zinc-600 text-[13px] leading-[1.75] mb-6 flex-1">
+                  {service.desc}
+                </p>
+
+                {/* Scope tags */}
+                <div className="flex flex-wrap gap-2">
+                  {service.tags.map((tag) => (
+                    <span key={tag} className="text-[10px] font-black tracking-[0.08em] uppercase text-[#555] bg-zinc-100 px-2.5 py-1 border border-zinc-200 group-hover:border-[#F8991C]/30 transition-colors">
+                      {tag}
+                    </span>
                   ))}
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Mobile CTA below grid */}
+          <div className="mt-10 flex justify-center lg:hidden">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 bg-[#111] text-white font-black text-[11px] tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#F8991C] hover:text-black transition-colors"
+            >
+              VIEW ALL CAPABILITIES
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                <path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+            </Link>
           </div>
 
         </div>
