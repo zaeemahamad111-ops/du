@@ -12,7 +12,7 @@ const services = [
     id: '01',
     title: 'Cement Plant Mechanical Erection & Shutdown Maintenance',
     desc: 'We deliver end-to-end mechanical erection, equipment alignment, plant renovation, and shutdown execution for cement manufacturing facilities across India.',
-    img: '/cap-mechanical.png',
+    img: '/svc-cement.png',
     bullets: [
       {
         subtitle: 'Core Plant Equipment Erection',
@@ -36,7 +36,7 @@ const services = [
     id: '02',
     title: 'Steel Plant Construction & Heavy Machinery Assembly',
     desc: 'We execute heavy-duty mechanical construction, precision equipment positioning, and utility assembly for steel mills, sponge iron plants, and metal processing complexes.',
-    img: '/cap-piping.png',
+    img: '/svc-steel.png',
     bullets: [
       {
         subtitle: 'Heavy Equipment Erection',
@@ -56,7 +56,7 @@ const services = [
     id: '03',
     title: 'Structural Steel Fabrication & Erection',
     desc: 'We offer full-scope structural engineering—from shop detailing, heavy plate fabrication, and surface treatment to site transportation and precision heavy-lift erection in strict compliance with IS 800 / IS 808 (BIS), ASME, and AISC codes.',
-    img: '/cap-shutdown.png',
+    img: '/svc-structural.png',
     bullets: [
       {
         subtitle: 'Industrial Buildings & Heavy Plant Sheds',
@@ -84,7 +84,7 @@ const services = [
     id: '04',
     title: 'Industrial Piping Systems',
     desc: 'We provide complete metallic (Carbon Steel, Stainless Steel, Alloy Steel) and non-metallic (FRP, GRP, HDPE, PVC/CPVC, PP) industrial piping solutions—from isometric detailing and shop fabrication to field fit-up, NDT testing, and system pre-commissioning.',
-    img: '/cap-fabrication.png',
+    img: '/svc-piping.png',
     bullets: [
       {
         subtitle: 'Metallic Piping Systems (CS, SS, Alloy)',
@@ -104,7 +104,7 @@ const services = [
     id: '05',
     title: 'Wind Turbine Erection & Renewable Energy Balance-of-Plant',
     desc: 'We specialize in heavy-lift rigging, mechanical assembly, and site erection for utility-scale renewable power installations and industrial energy recovery projects.',
-    img: '/cap-mechanical.png',
+    img: '/svc-renewable.png',
     bullets: [
       {
         subtitle: 'Wind Turbine Generator (WTG) Erection',
@@ -128,7 +128,7 @@ const services = [
     id: '06',
     title: 'Operation & Maintenance (O&M)',
     desc: 'Comprehensive operation and maintenance support for industrial plants, including routine maintenance, predictive maintenance, breakdown support, and long-term O&M contracts to ensure optimal plant performance and reliability.',
-    img: '/cap-commissioning.png',
+    img: '/svc-om.png',
     bullets: [
       {
         subtitle: 'Routine & Preventive Maintenance',

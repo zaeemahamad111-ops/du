@@ -11,14 +11,14 @@ const industries = [
   {
     id: '01',
     name: 'Cement & Mineral Processing',
-    img: '/ind-power.png',
+    img: '/svc-cement.png',
     desc: 'Mechanical erection, rotary kiln installations, preheaters, clinker grinding units, and heavy equipment alignment for greenfield plants, modernizations, and capacity expansions.',
     scope: ['Rotary kiln installations', 'Preheaters & clinker grinding units', 'Heavy equipment alignment'],
   },
   {
     id: '02',
     name: 'Steel, Aluminium & Heavy Metals',
-    img: '/ind-steel.png',
+    img: '/svc-steel.png',
     desc: 'Heavy machinery positioning, blast furnace erections, sponge iron plants, rebar mills, and industrial mill mechanical installations.',
     scope: ['Blast furnace erections', 'Sponge iron plants & rebar mills', 'Heavy machinery positioning'],
   },
@@ -39,14 +39,14 @@ const industries = [
   {
     id: '05',
     name: 'Wind & Renewable Energy',
-    img: '/ind-renewable.png',
+    img: '/svc-renewable.png',
     desc: 'Assembly, heavy lifting, and mechanical erection of Wind Turbine Generators (WTGs), hybrid concrete towers, waste heat recovery systems (WHRP), and mechanical balance-of-plant packages.',
     scope: ['Wind Turbine Generators (WTGs)', 'Hybrid concrete towers', 'Waste heat recovery systems (WHRP)'],
   },
   {
     id: '06',
     name: 'Process Industries (Sugar, Fertilizer & MDF)',
-    img: '/ind-petrochemical.png',
+    img: '/svc-piping.png',
     desc: 'Specialized vessel assembly, digester dome construction, tank erection, and process equipment mechanical installation.',
     scope: ['Specialized vessel assembly', 'Digester dome construction', 'Tank erection & process equipment'],
   },
