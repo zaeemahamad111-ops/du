@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Our Core Capabilities & Services | DU-Astral Construction',
-  description: 'End-to-end mechanical construction, heavy fabrication, high-pressure piping, structural steel erection, wind turbine erection, and renewable energy balance-of-plant services.',
+  description: 'End-to-end mechanical erection, equipment shutdown maintenance, metallic & non-metallic industrial piping, structural steel erection, and operation & maintenance (O&M) contracts.',
 };
 
 const services = [
@@ -82,13 +82,17 @@ const services = [
   },
   {
     id: '04',
-    title: 'High-Pressure Industrial Piping Systems',
-    desc: 'We provide complete industrial piping solutions—from isometric detailing and shop fabrication to field fit-up, NDT testing, and system pre-commissioning.',
+    title: 'Metallic & Non-Metallic Industrial Piping Systems',
+    desc: 'We provide complete metallic (Carbon Steel, Stainless Steel, Alloy Steel) and non-metallic (FRP, GRP, HDPE, PVC/CPVC, PP) industrial piping solutions—from isometric detailing and shop fabrication to field fit-up, NDT testing, and system pre-commissioning.',
     img: '/cap-fabrication.png',
     bullets: [
       {
-        subtitle: 'Process & Utility Piping',
-        detail: 'Shop and field fabrication of Carbon Steel (CS), Stainless Steel (SS), and Alloy Steel piping for high-pressure, high-temperature industrial process lines.',
+        subtitle: 'Metallic Piping Systems (CS, SS, Alloy)',
+        detail: 'Shop and field fabrication of Carbon Steel (CS), Stainless Steel (SS), and Alloy Steel piping for high-pressure, high-temperature industrial process lines and utility headers.',
+      },
+      {
+        subtitle: 'Non-Metallic Piping Systems (FRP, GRP, HDPE, PVC)',
+        detail: 'Specialized fabrication, spooling, jointing, and laying of FRP/GRP, HDPE, PVC/CPVC, and PP piping for corrosive chemical process lines, water treatment, and effluent networks.',
       },
       {
         subtitle: 'Testing & Pre-Commissioning Support',
@@ -122,21 +126,25 @@ const services = [
   },
   {
     id: '06',
-    title: 'Heavy Industrial Fabrication & Storage Vessels',
-    desc: 'Our workshop and field teams execute custom plate fabrication, heavy ducting, and industrial tankage strictly conforming to code requirements.',
-    img: '/cap-piping.png',
+    title: 'Operation & Maintenance (O&M)',
+    desc: 'Comprehensive operation and maintenance support for industrial plants, including routine maintenance, predictive maintenance, breakdown support, and long-term O&M contracts to ensure optimal plant performance and reliability.',
+    img: '/cap-commissioning.png',
     bullets: [
       {
-        subtitle: 'Ducting & Hopper Fabrication',
-        detail: 'Custom fabrication of thick-plate ducting, raw material hoppers, silos, cyclones, and discharge chutes.',
+        subtitle: 'Routine & Preventive Maintenance',
+        detail: 'Scheduled mechanical overhauls, drive gear alignments, lube oil servicing, and preventive maintenance routines for continuous plant operations.',
       },
       {
-        subtitle: 'Storage Tanks & Pressure Vessels',
-        detail: 'On-site and shop fabrication of API 650 storage tanks, utility vessels, chemical tanks, and heat exchanger shells.',
+        subtitle: 'Predictive Maintenance & Monitoring',
+        detail: 'Vibration analysis, thermal imaging, laser alignment, and condition-based monitoring to detect and rectify equipment anomalies before failures occur.',
       },
       {
-        subtitle: 'Protective Surface Coatings',
-        detail: 'Specialized grit blasting, anti-corrosive primer application, and heavy-duty industrial painting for harsh operating environments.',
+        subtitle: 'Breakdown Support & Emergency Repairs',
+        detail: 'Rapid 24/7 mobilization of certified technical workforces, tooling, and emergency repair crews for zero-delay breakdown recovery.',
+      },
+      {
+        subtitle: 'Long-Term O&M Contracts & Plant Reliability',
+        detail: 'Turnkey annual and multi-year Operation & Maintenance contracts designed to maximize asset lifespan, lower operational risk, and guarantee optimal performance.',
       },
     ],
   },
@@ -162,7 +170,7 @@ export default function ServicesPage() {
               <span className="text-white">& SERVICES.</span>
             </h1>
             <p className="text-white/55 text-[13px] leading-relaxed max-w-lg mt-6">
-              End-to-end mechanical construction, heavy fabrication, high-pressure piping, and renewable energy erection — delivered with precision, safety, and on-time execution.
+              End-to-end mechanical construction, metallic & non-metallic piping, operation & maintenance (O&M), and turnkey plant erection — delivered with precision, safety, and on-time execution.
             </p>
           </div>
         </div>

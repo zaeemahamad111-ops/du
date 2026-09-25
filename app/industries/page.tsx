@@ -26,8 +26,8 @@ const industries = [
     id: '03',
     name: 'Oil Refineries & Petrochemicals',
     img: '/ind-refinery.png',
-    desc: 'High-pressure process piping pre-fabrication, mobile service tower installations, cross-country/in-plant pipelines, and storage vessel mechanical works conforming to ASME/API standards.',
-    scope: ['High-pressure process piping', 'Mobile service tower installations', 'Cross-country/in-plant pipelines'],
+    desc: 'Metallic & non-metallic process piping pre-fabrication, mobile service tower installations, cross-country/in-plant pipelines, and storage vessel mechanical works conforming to ASME/API standards.',
+    scope: ['Metallic & non-metallic process piping', 'Mobile service tower installations', 'Cross-country/in-plant pipelines'],
   },
   {
     id: '04',

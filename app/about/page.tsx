@@ -45,10 +45,10 @@ export default function AboutPage() {
             </div>
             <div className="lg:col-span-7 flex flex-col gap-6 justify-center">
               <p className="text-[#555] text-[15px] leading-[1.8] font-medium pl-6 border-l-2 border-[#F8991C]">
-                We are a trusted mechanical contracting company specializing in heavy equipment erection, industrial structural fabrication, high-pressure piping execution, and shutdown maintenance for India’s core infrastructure sectors.
+                We are a trusted mechanical contracting company specializing in heavy equipment erection, industrial structural fabrication, metallic & non-metallic industrial piping execution, plant shutdown maintenance, and long-term O&M contracts for India’s core infrastructure sectors.
               </p>
               <p className="text-[#555] text-[14px] leading-[1.8]">
-                Operating as a direct partner to plant owners, EPC contractors, and project developers, we bridge the gap between engineering design and site execution. From installing rotary kilns and wind turbine generators to executing critical refinery piping and emergency plant turnarounds, our work is driven by zero-harm safety standards, precision quality control, and strict schedule adherence.
+                Operating as a direct partner to plant owners, EPC contractors, and project developers, we bridge the gap between engineering design and site execution. Powered by a 5000+ certified technical workforce (6G welders, master riggers, millwrights, and safety stewards), our work is driven by zero-harm safety standards, precision quality control, and strict schedule adherence across Erection, Shutdowns, Maintenance, and Turnkey O&M Contracts.
               </p>
             </div>
           </div>

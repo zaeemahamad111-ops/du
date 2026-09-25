@@ -24,9 +24,9 @@ const coreServicesData = [
   },
   {
     id: '04',
-    title: 'High-Pressure Industrial Piping Systems',
-    desc: 'Complete industrial piping solutions — from isometric detailing and shop fabrication to field fit-up, NDT testing, and pre-commissioning.',
-    tags: ['CS / SS / Alloy Piping', 'Hydro & Pneumatic Testing', 'NDT Inspections'],
+    title: 'Metallic & Non-Metallic Industrial Piping Systems',
+    desc: 'Complete metallic (CS, SS, Alloy) and non-metallic (FRP, GRP, HDPE, PVC) piping solutions — from isometric detailing and shop fabrication to field fit-up, NDT testing, and pre-commissioning.',
+    tags: ['Metallic Piping (CS/SS/Alloy)', 'Non-Metallic (FRP/GRP/HDPE)', 'Hydro & Pneumatic Testing', 'NDT Inspections'],
   },
   {
     id: '05',
@@ -36,9 +36,9 @@ const coreServicesData = [
   },
   {
     id: '06',
-    title: 'Heavy Industrial Fabrication & Storage Vessels',
-    desc: 'Custom plate fabrication, heavy ducting, and industrial tankage executed strictly conforming to API 650 and applicable code requirements.',
-    tags: ['Ducting & Hoppers', 'API 650 Storage Tanks', 'Surface Coatings'],
+    title: 'Operation & Maintenance (O&M)',
+    desc: 'Comprehensive operation and maintenance support for industrial plants, including routine maintenance, predictive maintenance, breakdown support, and long-term O&M contracts to ensure optimal plant performance and reliability.',
+    tags: ['Routine Maintenance', 'Predictive Maintenance', 'Breakdown Support', 'Long-Term O&M Contracts'],
   },
 ];
 
@@ -47,7 +47,7 @@ const locationsData = [
     country: 'Saudi Arabia',
     region: 'Middle East Hub',
     focus: 'Oil & Gas / Petrochemicals',
-    desc: 'Executing process piping fabrication, refinery expansion modules, and high-pressure pipeline networks under rigorous industrial parameters.',
+    desc: 'Executing process piping fabrication (metallic & non-metallic), refinery expansion modules, and pipeline networks under rigorous industrial parameters.',
     projectsCount: '4 Active Projects'
   },
   {
@@ -77,7 +77,7 @@ const detailedIndustriesData = [
   },
   {
     title: 'Oil Refineries & Petrochemicals',
-    scope: 'High-pressure process piping pre-fabrication, mobile service tower installations, cross-country/in-plant pipelines, and storage vessel mechanical works conforming to ASME/API standards.'
+    scope: 'Metallic & non-metallic process piping pre-fabrication, mobile service tower installations, cross-country/in-plant pipelines, and storage vessel mechanical works conforming to ASME/API standards.'
   },
   {
     title: 'Thermal Power & Captive Utilities',
@@ -281,6 +281,73 @@ export default function HomePage() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* ── CORE OPERATIONAL PILLARS (ERECTION, SHUTDOWN, MAINTENANCE, CONTRACTS) ── */}
+      <section className="bg-[#0D0D0D] text-white py-16 border-y border-zinc-800 relative overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
+          style={{
+            backgroundImage: `linear-gradient(rgba(248,153,28,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(248,153,28,0.5) 1px, transparent 1px)`,
+            backgroundSize: '40px 40px',
+          }}
+        />
+        <div className="relative z-10 max-w-[1440px] mx-auto px-8 lg:px-16">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+            <div>
+              <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-3">
+                CORE OPERATIONAL SCOPE
+              </span>
+              <h2 className="font-black uppercase text-white leading-none tracking-tight text-[28px] md:text-[40px]">
+                Our Main Operational Capabilities.
+              </h2>
+            </div>
+            <p className="text-white/60 text-[13px] max-w-md font-medium">
+              We specialize in full-spectrum industrial mechanical execution with deep technical expertise, certified manpower, and turnkey management.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: 'ERECTION',
+                badge: 'Precision Mechanical Positioning',
+                desc: 'Precision mechanical erection of heavy equipment, rotary kilns, mill drives, turbines, and structural steel frameworks.',
+                tag: 'Equipment & Heavy Rigging'
+              },
+              {
+                title: 'SHUTDOWN',
+                badge: '24/7 Rapid Turnaround',
+                desc: 'Annual and emergency plant shutdown execution, turnaround overhauls, and rapid 24/7 technical workforce mobilization.',
+                tag: 'Zero-Delay Turnarounds'
+              },
+              {
+                title: 'MAINTENANCE',
+                badge: 'Preventive & Predictive',
+                desc: 'Routine plant maintenance, predictive condition monitoring, laser alignment, and emergency breakdown recovery support.',
+                tag: 'Plant Overhauls & Repairs'
+              },
+              {
+                title: 'CONTRACTS',
+                badge: 'Turnkey O&M Support',
+                desc: 'Long-term Operation & Maintenance (O&M) contracts, Annual Maintenance Contracts (AMC), and comprehensive service agreements.',
+                tag: 'Long-Term O&M Contracts'
+              }
+            ].map((pillar, idx) => (
+              <div key={idx} className="bg-[#161616] border border-white/10 p-8 flex flex-col justify-between group hover:border-[#F8991C] transition-all duration-300">
+                <div>
+                  <span className="text-[#F8991C] text-[9px] font-black tracking-[0.2em] uppercase block mb-2">{pillar.badge}</span>
+                  <h3 className="text-[#F8991C] font-black text-[24px] uppercase tracking-wider mb-4 leading-none">{pillar.title}</h3>
+                  <p className="text-white/70 text-[13px] leading-relaxed mb-6 font-medium">{pillar.desc}</p>
+                </div>
+                <div className="border-t border-white/10 pt-4 flex justify-between items-center">
+                  <span className="text-white/40 text-[10px] font-bold tracking-wider uppercase">{pillar.tag}</span>
+                  <span className="text-[#F8991C] font-black text-[14px]">→</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -495,6 +562,47 @@ export default function HomePage() {
             ))}
           </div>
 
+        </div>
+      </section>
+
+      {/* ── MANPOWER POWERHOUSE SHOWCASE ── */}
+      <section className="bg-gradient-to-r from-[#111] via-[#1a1a1a] to-[#111] text-white py-20 border-t border-zinc-800 relative overflow-hidden">
+        <div className="max-w-[1440px] mx-auto px-8 lg:px-16 relative z-10">
+          <div className="grid grid-cols-12 gap-8 items-center">
+            <div className="col-span-12 lg:col-span-6">
+              <span className="text-[#F8991C] text-[10px] font-black tracking-[0.25em] uppercase block mb-4">OUR MAIN STRENGTH</span>
+              <h2 className="font-black uppercase text-white leading-none tracking-tight mb-6" style={{ fontSize: 'clamp(28px, 3.8vw, 50px)' }}>
+                POWERED BY A<br />
+                <span className="text-[#F8991C]">CERTIFIED WORKFORCE.</span>
+              </h2>
+              <p className="text-white/70 text-[14px] leading-relaxed mb-8">
+                Our greatest competitive advantage lies in our highly skilled, certified, and battle-tested manpower pool. From CSWIP/AWS certified 6G welders to master riggers and HSE stewards, we mobilize trained technical teams to execute complex industrial projects under aggressive timelines.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="border-l-2 border-[#F8991C] pl-4">
+                  <span className="text-[#F8991C] font-black text-[22px] block">5000+ Personnel</span>
+                  <span className="text-white/60 text-[11px] uppercase tracking-wider block">Multi-Skilled Technical Pool</span>
+                </div>
+                <div className="border-l-2 border-[#F8991C] pl-4">
+                  <span className="text-[#F8991C] font-black text-[22px] block">24/7 Mobilization</span>
+                  <span className="text-white/60 text-[11px] uppercase tracking-wider block">Rapid Emergency Response</span>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-12 lg:col-span-6 grid grid-cols-2 gap-4">
+              {[
+                { title: 'Certified Welders', desc: '6G / TIG / MIG / SMAW welders qualified per ASME Section IX & AWS D1.1.' },
+                { title: 'Heavy Rigging Masters', desc: 'Certified crane operators, rigging supervisors & heavy lift engineers.' },
+                { title: 'Millwright Technicians', desc: 'Laser alignment specialists for kilns, turbines, mills & high-speed drives.' },
+                { title: 'Safety & QA/QC Engineers', desc: 'ISO 45001 safety stewards & NDT Level II certified inspectors.' },
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white/5 border border-white/10 p-6 rounded-none hover:border-[#F8991C] transition-colors">
+                  <span className="text-[#F8991C] font-black text-[14px] block mb-2">0{idx + 1}. {item.title}</span>
+                  <p className="text-white/60 text-[12px] leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

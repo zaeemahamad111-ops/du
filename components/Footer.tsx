@@ -79,12 +79,12 @@ export default function Footer() {
             {
               heading: 'SERVICES',
               links: [
-                { label: 'Mechanical Construction', href: '/services' },
-                { label: 'Heavy Fabrication', href: '/services' },
-                { label: 'Industrial Piping', href: '/services' },
-                { label: 'Plant Commissioning', href: '/services' },
-                { label: 'Shutdown Maintenance', href: '/services' },
-                { label: 'Electrical & Instrumentation', href: '/services' },
+                { label: 'Mechanical Erection & Shutdown', href: '/services' },
+                { label: 'Heavy Machinery Assembly', href: '/services' },
+                { label: 'Structural Steel Fabrication', href: '/services' },
+                { label: 'Metallic & Non-Metallic Piping', href: '/services' },
+                { label: 'Renewable Energy Erection', href: '/services' },
+                { label: 'Operation & Maintenance (O&M)', href: '/services' },
               ],
             },
             {
