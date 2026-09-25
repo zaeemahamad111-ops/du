@@ -82,7 +82,7 @@ const services = [
   },
   {
     id: '04',
-    title: 'Metallic & Non-Metallic Industrial Piping Systems',
+    title: 'Industrial Piping Systems',
     desc: 'We provide complete metallic (Carbon Steel, Stainless Steel, Alloy Steel) and non-metallic (FRP, GRP, HDPE, PVC/CPVC, PP) industrial piping solutions—from isometric detailing and shop fabrication to field fit-up, NDT testing, and system pre-commissioning.',
     img: '/cap-fabrication.png',
     bullets: [

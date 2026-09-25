@@ -82,7 +82,7 @@ export default function Footer() {
                 { label: 'Mechanical Erection & Shutdown', href: '/services' },
                 { label: 'Heavy Machinery Assembly', href: '/services' },
                 { label: 'Structural Steel Fabrication', href: '/services' },
-                { label: 'Metallic & Non-Metallic Piping', href: '/services' },
+                { label: 'Industrial Piping Systems', href: '/services' },
                 { label: 'Renewable Energy Erection', href: '/services' },
                 { label: 'Operation & Maintenance (O&M)', href: '/services' },
               ],

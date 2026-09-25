@@ -24,7 +24,7 @@ const coreServicesData = [
   },
   {
     id: '04',
-    title: 'Metallic & Non-Metallic Industrial Piping Systems',
+    title: 'Industrial Piping Systems',
     desc: 'Complete metallic (CS, SS, Alloy) and non-metallic (FRP, GRP, HDPE, PVC) piping solutions — from isometric detailing and shop fabrication to field fit-up, NDT testing, and pre-commissioning.',
     tags: ['Metallic Piping (CS/SS/Alloy)', 'Non-Metallic (FRP/GRP/HDPE)', 'Hydro & Pneumatic Testing', 'NDT Inspections'],
   },
