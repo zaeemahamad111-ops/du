@@ -226,10 +226,10 @@ export default function ServicesPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-white/10">
             {[
-              { step: '01', title: 'CONSULTATION', desc: 'Understanding your project requirements, scope, and timelines in detail.' },
-              { step: '02', title: 'ENGINEERING', desc: 'Detailed engineering design, material takeoffs, and execution planning.' },
-              { step: '03', title: 'EXECUTION', desc: 'Mobilization of skilled workforce and deployment of resources on-site.' },
-              { step: '04', title: 'HANDOVER', desc: 'Commissioning, quality checks, and structured handover to client teams.' },
+              { step: '01', title: 'CONSULTATION', desc: 'Understanding your project requirements, scope, site conditions, and timelines in detail.' },
+              { step: '02', title: 'PLANNING', desc: 'Detailed execution planning, resource allocation, material coordination, and method statements.' },
+              { step: '03', title: 'EXECUTION', desc: 'Mobilization of skilled workforce, tools, and equipment for safe and precise on-site execution.' },
+              { step: '04', title: 'HANDOVER & SUPPORT', desc: 'Quality checks, documentation, commissioning support, and structured handover to client teams.' },
             ].map((p) => (
               <div key={p.step} className="p-10 border-r border-white/10 last:border-r-0 group hover:bg-white/5 transition-colors">
                 <span className="text-[#F8991C] font-black text-[48px] leading-none block mb-5 opacity-40 group-hover:opacity-100 transition-opacity">{p.step}</span>
