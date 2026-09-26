@@ -10,80 +10,48 @@ export const metadata: Metadata = {
 const services = [
   {
     id: '01',
-    title: 'Cement Plant Mechanical Erection & Shutdown Maintenance',
-    desc: 'We deliver end-to-end mechanical erection, equipment alignment, plant renovation, and shutdown execution for cement manufacturing facilities across India.',
+    title: 'Mechanical Erection & Equipment Installation',
+    desc: 'Precision erection and installation of heavy plant machinery and critical process equipment.',
     img: '/svc-cement.png',
     bullets: [
       {
-        subtitle: 'Core Plant Equipment Erection',
-        detail: 'Precision erection, drive alignment, and mechanical installation of Rotary Kilns, Ball Mills, Vertical Roller Mills (VRM), Raw Mills, and Preheater Towers.',
+        subtitle: 'Core Heavy Equipment Erection',
+        detail: 'Precision erection, laser drive alignment, and mechanical positioning of Rotary Kilns, Ball Mills, Vertical Roller Mills (VRM), Steam/Gas Turbines, and Heavy Machinery.',
       },
       {
-        subtitle: 'Material Handling & Processing',
-        detail: 'Assembly and precision alignment of heavy crushers, clinker coolers, bucket elevators, deep bucket conveyors, and bag filters.',
+        subtitle: 'Material Handling & Processing Systems',
+        detail: 'Assembly and precision positioning of heavy crushers, clinker coolers, bucket elevators, deep bucket conveyors, and bag filter systems.',
       },
       {
-        subtitle: 'Plant Modernization & Upgradation',
-        detail: 'Retrofitting existing production lines, plant debottlenecking, capacity expansion, and Waste Heat Recovery Plant (WHRP) integration.',
-      },
-      {
-        subtitle: 'Annual & Emergency Shutdown Execution',
-        detail: 'Rapid mobilization of dedicated 24/7 technical workforces, heavy tooling, and certified rigging teams for zero-delay turnaround execution.',
+        subtitle: 'Plant Modernization & Capacity Expansion',
+        detail: 'Retrofitting existing production lines, debottlenecking, equipment upgrades, and Waste Heat Recovery Plant (WHRP) integration.',
       },
     ],
   },
   {
     id: '02',
-    title: 'Steel Plant Construction & Heavy Machinery Assembly',
-    desc: 'We execute heavy-duty mechanical construction, precision equipment positioning, and utility assembly for steel mills, sponge iron plants, and metal processing complexes.',
-    img: '/svc-steel.png',
-    bullets: [
-      {
-        subtitle: 'Heavy Equipment Erection',
-        detail: 'Precision positioning and laser alignment of Blast Furnaces, Direct Reduced Iron (DRI) kilns, Electric Arc Furnaces (EAF), and Continuous Casting Machines.',
-      },
-      {
-        subtitle: 'Rolling Mill Assembly',
-        detail: 'Installation and commissioning support for rebar mills, wire rod mills, heavy drive gearboxes, overhead crane systems, and hydraulic tilt tables.',
-      },
-      {
-        subtitle: 'Utility & Ducting Networks',
-        detail: 'High-capacity industrial air/gas ducting fabrication, cooling water headers, slurry piping systems, and heavy exhaust stack erection.',
-      },
-    ],
-  },
-  {
-    id: '03',
-    title: 'Structural Steel Fabrication & Erection',
-    desc: 'We offer full-scope structural engineering—from shop detailing, heavy plate fabrication, and surface treatment to site transportation and precision heavy-lift erection in strict compliance with IS 800 / IS 808 (BIS), ASME, and AISC codes.',
+    title: 'Heavy Industrial Structural Steel Fabrication & Erection',
+    desc: 'Complete structural steel fabrication and site erection services.',
     img: '/svc-structural.png',
     bullets: [
       {
         subtitle: 'Industrial Buildings & Heavy Plant Sheds',
-        detail: 'Fabrication and field erection of pre-engineered and heavy structural plant buildings, furnace sheds, warehouse structures, powerhouse buildings, and conveyor gantries.',
+        detail: 'Shop fabrication and field erection of pre-engineered and heavy structural plant buildings, furnace sheds, powerhouse structures, and conveyor gantries.',
       },
       {
         subtitle: 'Pipe Racks & Access Platforms',
         detail: 'Multi-tier heavy pipe racks, heat exchanger support structures, equipment access platforms, stair towers, walkways, and safety handrailing.',
       },
       {
-        subtitle: 'Heavy Girders, Columns & Frames',
-        detail: 'Workshop fabrication and field assembly of high-tonnage EOT crane girders, box columns, heavy built-up sections, roof trusses, and spatial frames.',
-      },
-      {
-        subtitle: 'Hoppers, Silos & Support Framing',
-        detail: 'Structural framing and assembly for heavy raw material hoppers, clinker silos, coal bunkers, and cyclone support towers.',
-      },
-      {
-        subtitle: 'Surface Preparation & Quality Control',
-        detail: 'SA 2.5 shot/grit blasting, anti-corrosive industrial painting systems, and 100% joint NDT (RT/UT/MPT/LPT) executed by certified 6G/SMAW/MIG welders.',
+        subtitle: 'Heavy Girders, Columns & Silo Framing',
+        detail: 'Workshop fabrication and field assembly of high-tonnage EOT crane girders, box columns, raw material hoppers, clinker silos, and spatial frames.',
       },
     ],
   },
   {
-    id: '04',
-    title: 'Industrial Piping Systems',
-    desc: 'We provide complete metallic (Carbon Steel, Stainless Steel, Alloy Steel) and non-metallic (FRP, GRP, HDPE, PVC/CPVC, PP) industrial piping solutions—from isometric detailing and shop fabrication to field fit-up, NDT testing, and system pre-commissioning.',
+    id: '03',
+    title: 'Industrial Piping Systems (Fabrication & Erection)',
+    desc: 'Metallic (CS, SS, Alloy) and Non-Metallic (FRP, GRP, HDPE, PVC/CPVC, PP) piping systems.',
     img: '/svc-piping.png',
     bullets: [
       {
@@ -91,19 +59,19 @@ const services = [
         detail: 'Shop and field fabrication of Carbon Steel (CS), Stainless Steel (SS), and Alloy Steel piping for high-pressure, high-temperature industrial process lines and utility headers.',
       },
       {
-        subtitle: 'Non-Metallic Piping Systems (FRP, GRP, HDPE, PVC)',
-        detail: 'Specialized fabrication, spooling, jointing, and laying of FRP/GRP, HDPE, PVC/CPVC, and PP piping for corrosive chemical process lines, water treatment, and effluent networks.',
+        subtitle: 'Non-Metallic Piping Systems (FRP, GRP, HDPE, PVC/CPVC, PP)',
+        detail: 'Specialized fabrication, spooling, jointing, and field laying of FRP/GRP, HDPE, PVC/CPVC, and PP piping for corrosive chemical process lines, water treatment, and effluent networks.',
       },
       {
         subtitle: 'Testing & Pre-Commissioning Support',
-        detail: 'Hydro-testing, pneumatic testing, line flushing, chemical cleaning, and joint NDT inspections to ensure 100% leak-free plant startups.',
+        detail: 'Hydro-testing, pneumatic testing, line flushing, chemical cleaning, and 100% joint NDT inspections to ensure leak-free plant startups.',
       },
     ],
   },
   {
-    id: '05',
+    id: '04',
     title: 'Wind Turbine Erection & Renewable Energy Balance-of-Plant',
-    desc: 'We specialize in heavy-lift rigging, mechanical assembly, and site erection for utility-scale renewable power installations and industrial energy recovery projects.',
+    desc: 'WTG erection, hybrid concrete towers, WHRP, and mechanical BOP packages.',
     img: '/svc-renewable.png',
     bullets: [
       {
@@ -115,36 +83,48 @@ const services = [
         detail: 'Specialized segment alignment, jointing, and post-tensioning execution for high-capacity hybrid concrete wind turbine towers.',
       },
       {
-        subtitle: 'Waste Heat Recovery Systems (WHRP)',
-        detail: 'Turnkey mechanical assembly, boiler casing erection, heat exchanger placement, and ducting integration to capture waste thermal energy in cement and steel facilities.',
+        subtitle: 'Waste Heat Recovery Systems (WHRP) & Mechanical BOP',
+        detail: 'Turnkey mechanical assembly of boiler casings, heat exchangers, hydraulic power packs, lube oil piping, cooling networks, and structural bases.',
+      },
+    ],
+  },
+  {
+    id: '05',
+    title: 'Specialized Mechanical Execution & Manpower Support',
+    desc: 'Plant shutdowns, overhauls, and skilled manpower deployment.',
+    img: '/svc-steel.png',
+    bullets: [
+      {
+        subtitle: 'Annual & Emergency Shutdown Execution',
+        detail: 'Rapid mobilization of 24/7 turnaround teams, heavy tooling, and certified rigging crews for zero-delay plant overhaul execution.',
       },
       {
-        subtitle: 'Mechanical Balance-of-Plant (BOP)',
-        detail: 'Erection of auxiliary mechanical networks, including hydraulic power packs, lube oil piping, cooling systems, and structural bases.',
+        subtitle: 'Certified Manpower Deployment',
+        detail: 'Deployment of CSWIP/AWS certified 6G welders, master riggers, millwright fitters, QA/QC inspectors, and ISO 45001 HSE stewards.',
+      },
+      {
+        subtitle: 'Plant Overhauls & Renovation',
+        detail: 'Specialized mechanical overhauls, debottlenecking, equipment refurbishment, and field modifications for continuous industrial facilities.',
       },
     ],
   },
   {
     id: '06',
     title: 'Operation & Maintenance (O&M)',
-    desc: 'Comprehensive operation and maintenance support for industrial plants, including routine maintenance, predictive maintenance, breakdown support, and long-term O&M contracts to ensure optimal plant performance and reliability.',
+    desc: 'Routine, predictive, breakdown support, and long-term O&M contracts.',
     img: '/svc-om.png',
     bullets: [
       {
         subtitle: 'Routine & Preventive Maintenance',
-        detail: 'Scheduled mechanical overhauls, drive gear alignments, lube oil servicing, and preventive maintenance routines for continuous plant operations.',
+        detail: 'Scheduled mechanical overhauls, drive gear alignments, lube oil servicing, and preventive maintenance routines for uninterrupted plant operations.',
       },
       {
         subtitle: 'Predictive Maintenance & Monitoring',
         detail: 'Vibration analysis, thermal imaging, laser alignment, and condition-based monitoring to detect and rectify equipment anomalies before failures occur.',
       },
       {
-        subtitle: 'Breakdown Support & Emergency Repairs',
-        detail: 'Rapid 24/7 mobilization of certified technical workforces, tooling, and emergency repair crews for zero-delay breakdown recovery.',
-      },
-      {
-        subtitle: 'Long-Term O&M Contracts & Plant Reliability',
-        detail: 'Turnkey annual and multi-year Operation & Maintenance contracts designed to maximize asset lifespan, lower operational risk, and guarantee optimal performance.',
+        subtitle: 'Breakdown Support & Long-Term O&M Contracts',
+        detail: 'Rapid 24/7 emergency repair response and turnkey multi-year Operation & Maintenance contracts to lower operational risk and optimize asset performance.',
       },
     ],
   },

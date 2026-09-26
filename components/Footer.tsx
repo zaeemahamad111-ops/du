@@ -79,11 +79,11 @@ export default function Footer() {
             {
               heading: 'SERVICES',
               links: [
-                { label: 'Mechanical Erection & Shutdown', href: '/services' },
-                { label: 'Heavy Machinery Assembly', href: '/services' },
-                { label: 'Structural Steel Fabrication', href: '/services' },
+                { label: 'Mechanical Erection & Installation', href: '/services' },
+                { label: 'Structural Steel Fabrication & Erection', href: '/services' },
                 { label: 'Industrial Piping Systems', href: '/services' },
-                { label: 'Renewable Energy Erection', href: '/services' },
+                { label: 'Renewable Energy & WTG Erection', href: '/services' },
+                { label: 'Specialized Shutdowns & Manpower', href: '/services' },
                 { label: 'Operation & Maintenance (O&M)', href: '/services' },
               ],
             },
