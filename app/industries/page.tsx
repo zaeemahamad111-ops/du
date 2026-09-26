@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Industries | DU-Astral Construction',
-  description: 'Serving Oil & Gas, Steel, Power, Refineries, Petrochemicals, and Renewable Energy sectors with end-to-end EPC solutions.',
+  description: 'Serving Cement, Steel, Refineries & Petrochemicals, Power, Renewable Energy, and Process Industries with end-to-end mechanical execution solutions.',
 };
 
 const industries = [

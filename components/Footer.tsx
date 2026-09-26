@@ -90,12 +90,12 @@ export default function Footer() {
             {
               heading: 'INDUSTRIES',
               links: [
-                { label: 'Oil & Gas', href: '/industries' },
-                { label: 'Steel', href: '/industries' },
-                { label: 'Power', href: '/industries' },
-                { label: 'Refineries', href: '/industries' },
-                { label: 'Petrochemicals', href: '/industries' },
-                { label: 'Renewable Energy', href: '/industries' },
+                { label: 'Cement & Mineral Processing', href: '/industries' },
+                { label: 'Steel, Aluminium & Heavy Metals', href: '/industries' },
+                { label: 'Oil Refineries & Petrochemicals', href: '/industries' },
+                { label: 'Thermal Power & Captive Utilities', href: '/industries' },
+                { label: 'Wind & Renewable Energy', href: '/industries' },
+                { label: 'Process Industries (Sugar, Fertilizer & MDF)', href: '/industries' },
               ],
             },
             {
